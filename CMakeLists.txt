@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.19.4)
+project(ITCServer)
+aux_source_directory(src/ITCServerFrame DIR_MAINFRAME_SRCS)
+include_directories(include)
+add_subdirectory(tests)
