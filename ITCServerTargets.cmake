@@ -52,8 +52,8 @@ set_target_properties(tinyxml2::tinyxml2 PROPERTIES
 # Import target "tinyxml2::tinyxml2" for configuration ""
 set_property(TARGET tinyxml2::tinyxml2 APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(tinyxml2::tinyxml2 PROPERTIES
-  IMPORTED_LOCATION_NOCONFIG "/Users/wanaoi/home/source.d/C++/ITCServer/tinyxml2/libtinyxml2.8.0.0.dylib"
-  IMPORTED_SONAME_NOCONFIG "/Users/wanaoi/home/source.d/C++/ITCServer/tinyxml2/libtinyxml2.8.dylib"
+  IMPORTED_LOCATION_NOCONFIG "/Users/wanaoi/home/source.d/C++/ITCServer/lib/libtinyxml2.8.0.0.dylib"
+  IMPORTED_SONAME_NOCONFIG "/Users/wanaoi/home/source.d/C++/ITCServer/lib/libtinyxml2.8.dylib"
   )
 
 # This file does not depend on other imported targets which have

@@ -72,953 +72,1085 @@ CMAKE_BINARY_DIR = /Users/wanaoi/home/source.d/C++/ITCServer
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: lib/all
+all: src/all
 all: tests/all
-all: tinyxml2/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
+preinstall: lib/preinstall
+preinstall: src/preinstall
 preinstall: tests/preinstall
-preinstall: tinyxml2/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: lib/clean
+clean: src/clean
 clean: tests/clean
-clean: tinyxml2/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory lib
+
+# Recursive "all" directory target.
+lib/all: lib/CMakeFiles/xmltest.dir/all
+lib/all: lib/CMakeFiles/tinyxml2.dir/all
+
+.PHONY : lib/all
+
+# Recursive "preinstall" directory target.
+lib/preinstall:
+
+.PHONY : lib/preinstall
+
+# Recursive "clean" directory target.
+lib/clean: lib/CMakeFiles/ContinuousCoverage.dir/clean
+lib/clean: lib/CMakeFiles/ContinuousTest.dir/clean
+lib/clean: lib/CMakeFiles/ContinuousBuild.dir/clean
+lib/clean: lib/CMakeFiles/ContinuousStart.dir/clean
+lib/clean: lib/CMakeFiles/ExperimentalBuild.dir/clean
+lib/clean: lib/CMakeFiles/ExperimentalCoverage.dir/clean
+lib/clean: lib/CMakeFiles/ExperimentalSubmit.dir/clean
+lib/clean: lib/CMakeFiles/ContinuousUpdate.dir/clean
+lib/clean: lib/CMakeFiles/xmltest.dir/clean
+lib/clean: lib/CMakeFiles/ExperimentalUpdate.dir/clean
+lib/clean: lib/CMakeFiles/ExperimentalStart.dir/clean
+lib/clean: lib/CMakeFiles/ContinuousSubmit.dir/clean
+lib/clean: lib/CMakeFiles/ExperimentalTest.dir/clean
+lib/clean: lib/CMakeFiles/NightlySubmit.dir/clean
+lib/clean: lib/CMakeFiles/NightlyMemCheck.dir/clean
+lib/clean: lib/CMakeFiles/ExperimentalConfigure.dir/clean
+lib/clean: lib/CMakeFiles/NightlyCoverage.dir/clean
+lib/clean: lib/CMakeFiles/NightlyTest.dir/clean
+lib/clean: lib/CMakeFiles/uninstall.dir/clean
+lib/clean: lib/CMakeFiles/tinyxml2.dir/clean
+lib/clean: lib/CMakeFiles/ContinuousMemCheck.dir/clean
+lib/clean: lib/CMakeFiles/NightlyBuild.dir/clean
+lib/clean: lib/CMakeFiles/NightlyConfigure.dir/clean
+lib/clean: lib/CMakeFiles/NightlyUpdate.dir/clean
+lib/clean: lib/CMakeFiles/NightlyMemoryCheck.dir/clean
+lib/clean: lib/CMakeFiles/ContinuousConfigure.dir/clean
+lib/clean: lib/CMakeFiles/Nightly.dir/clean
+lib/clean: lib/CMakeFiles/NightlyStart.dir/clean
+lib/clean: lib/CMakeFiles/ExperimentalMemCheck.dir/clean
+lib/clean: lib/CMakeFiles/Continuous.dir/clean
+lib/clean: lib/CMakeFiles/Experimental.dir/clean
+
+.PHONY : lib/clean
+
+#=============================================================================
+# Directory level rules for directory src
+
+# Recursive "all" directory target.
+src/all: src/ITCServerFrame/all
+
+.PHONY : src/all
+
+# Recursive "preinstall" directory target.
+src/preinstall: src/ITCServerFrame/preinstall
+
+.PHONY : src/preinstall
+
+# Recursive "clean" directory target.
+src/clean: src/ITCServerFrame/clean
+
+.PHONY : src/clean
+
+#=============================================================================
+# Directory level rules for directory src/ITCServerFrame
+
+# Recursive "all" directory target.
+src/ITCServerFrame/all: src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/all
+
+.PHONY : src/ITCServerFrame/all
+
+# Recursive "preinstall" directory target.
+src/ITCServerFrame/preinstall:
+
+.PHONY : src/ITCServerFrame/preinstall
+
+# Recursive "clean" directory target.
+src/ITCServerFrame/clean: src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/clean
+
+.PHONY : src/ITCServerFrame/clean
 
 #=============================================================================
 # Directory level rules for directory tests
 
 # Recursive "all" directory target.
-tests/all: tests/CMakeFiles/testapp.dir/all
+tests/all: tests/testapp/all
+tests/all: tests/gmptest/all
 
 .PHONY : tests/all
 
 # Recursive "preinstall" directory target.
-tests/preinstall:
+tests/preinstall: tests/testapp/preinstall
+tests/preinstall: tests/gmptest/preinstall
 
 .PHONY : tests/preinstall
 
 # Recursive "clean" directory target.
-tests/clean: tests/CMakeFiles/testapp.dir/clean
+tests/clean: tests/testapp/clean
+tests/clean: tests/gmptest/clean
 
 .PHONY : tests/clean
 
 #=============================================================================
-# Directory level rules for directory tinyxml2
+# Directory level rules for directory tests/gmptest
 
 # Recursive "all" directory target.
-tinyxml2/all: tinyxml2/CMakeFiles/xmltest.dir/all
-tinyxml2/all: tinyxml2/CMakeFiles/tinyxml2.dir/all
+tests/gmptest/all: tests/gmptest/CMakeFiles/gmptest.dir/all
 
-.PHONY : tinyxml2/all
+.PHONY : tests/gmptest/all
 
 # Recursive "preinstall" directory target.
-tinyxml2/preinstall:
+tests/gmptest/preinstall:
 
-.PHONY : tinyxml2/preinstall
+.PHONY : tests/gmptest/preinstall
 
 # Recursive "clean" directory target.
-tinyxml2/clean: tinyxml2/CMakeFiles/ContinuousCoverage.dir/clean
-tinyxml2/clean: tinyxml2/CMakeFiles/ContinuousTest.dir/clean
-tinyxml2/clean: tinyxml2/CMakeFiles/ContinuousBuild.dir/clean
-tinyxml2/clean: tinyxml2/CMakeFiles/ContinuousStart.dir/clean
-tinyxml2/clean: tinyxml2/CMakeFiles/ExperimentalBuild.dir/clean
-tinyxml2/clean: tinyxml2/CMakeFiles/ExperimentalCoverage.dir/clean
-tinyxml2/clean: tinyxml2/CMakeFiles/ExperimentalSubmit.dir/clean
-tinyxml2/clean: tinyxml2/CMakeFiles/ContinuousUpdate.dir/clean
-tinyxml2/clean: tinyxml2/CMakeFiles/xmltest.dir/clean
-tinyxml2/clean: tinyxml2/CMakeFiles/ExperimentalUpdate.dir/clean
-tinyxml2/clean: tinyxml2/CMakeFiles/ExperimentalStart.dir/clean
-tinyxml2/clean: tinyxml2/CMakeFiles/ContinuousSubmit.dir/clean
-tinyxml2/clean: tinyxml2/CMakeFiles/ExperimentalTest.dir/clean
-tinyxml2/clean: tinyxml2/CMakeFiles/NightlySubmit.dir/clean
-tinyxml2/clean: tinyxml2/CMakeFiles/NightlyMemCheck.dir/clean
-tinyxml2/clean: tinyxml2/CMakeFiles/ExperimentalConfigure.dir/clean
-tinyxml2/clean: tinyxml2/CMakeFiles/NightlyCoverage.dir/clean
-tinyxml2/clean: tinyxml2/CMakeFiles/NightlyTest.dir/clean
-tinyxml2/clean: tinyxml2/CMakeFiles/uninstall.dir/clean
-tinyxml2/clean: tinyxml2/CMakeFiles/tinyxml2.dir/clean
-tinyxml2/clean: tinyxml2/CMakeFiles/ContinuousMemCheck.dir/clean
-tinyxml2/clean: tinyxml2/CMakeFiles/NightlyBuild.dir/clean
-tinyxml2/clean: tinyxml2/CMakeFiles/NightlyConfigure.dir/clean
-tinyxml2/clean: tinyxml2/CMakeFiles/NightlyUpdate.dir/clean
-tinyxml2/clean: tinyxml2/CMakeFiles/NightlyMemoryCheck.dir/clean
-tinyxml2/clean: tinyxml2/CMakeFiles/ContinuousConfigure.dir/clean
-tinyxml2/clean: tinyxml2/CMakeFiles/Nightly.dir/clean
-tinyxml2/clean: tinyxml2/CMakeFiles/NightlyStart.dir/clean
-tinyxml2/clean: tinyxml2/CMakeFiles/ExperimentalMemCheck.dir/clean
-tinyxml2/clean: tinyxml2/CMakeFiles/Continuous.dir/clean
-tinyxml2/clean: tinyxml2/CMakeFiles/Experimental.dir/clean
+tests/gmptest/clean: tests/gmptest/CMakeFiles/gmptest.dir/clean
 
-.PHONY : tinyxml2/clean
+.PHONY : tests/gmptest/clean
 
 #=============================================================================
-# Target rules for target tests/CMakeFiles/testapp.dir
+# Directory level rules for directory tests/testapp
 
-# All Build rule for target.
-tests/CMakeFiles/testapp.dir/all:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/testapp.dir/build.make tests/CMakeFiles/testapp.dir/depend
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/testapp.dir/build.make tests/CMakeFiles/testapp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num=1,2,3,4 "Built target testapp"
-.PHONY : tests/CMakeFiles/testapp.dir/all
+# Recursive "all" directory target.
+tests/testapp/all: tests/testapp/CMakeFiles/testapp.dir/all
 
-# Build rule for subdir invocation for target.
-tests/CMakeFiles/testapp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/testapp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tests/CMakeFiles/testapp.dir/rule
+.PHONY : tests/testapp/all
 
-# Convenience name for target.
-testapp: tests/CMakeFiles/testapp.dir/rule
+# Recursive "preinstall" directory target.
+tests/testapp/preinstall:
 
-.PHONY : testapp
+.PHONY : tests/testapp/preinstall
 
-# clean rule for target.
-tests/CMakeFiles/testapp.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/testapp.dir/build.make tests/CMakeFiles/testapp.dir/clean
-.PHONY : tests/CMakeFiles/testapp.dir/clean
+# Recursive "clean" directory target.
+tests/testapp/clean: tests/testapp/CMakeFiles/testapp.dir/clean
+
+.PHONY : tests/testapp/clean
 
 #=============================================================================
-# Target rules for target tinyxml2/CMakeFiles/ContinuousCoverage.dir
+# Target rules for target lib/CMakeFiles/ContinuousCoverage.dir
 
 # All Build rule for target.
-tinyxml2/CMakeFiles/ContinuousCoverage.dir/all:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ContinuousCoverage.dir/build.make tinyxml2/CMakeFiles/ContinuousCoverage.dir/depend
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ContinuousCoverage.dir/build.make tinyxml2/CMakeFiles/ContinuousCoverage.dir/build
+lib/CMakeFiles/ContinuousCoverage.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ContinuousCoverage.dir/build.make lib/CMakeFiles/ContinuousCoverage.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ContinuousCoverage.dir/build.make lib/CMakeFiles/ContinuousCoverage.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num= "Built target ContinuousCoverage"
-.PHONY : tinyxml2/CMakeFiles/ContinuousCoverage.dir/all
+.PHONY : lib/CMakeFiles/ContinuousCoverage.dir/all
 
 # Build rule for subdir invocation for target.
-tinyxml2/CMakeFiles/ContinuousCoverage.dir/rule: cmake_check_build_system
+lib/CMakeFiles/ContinuousCoverage.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyxml2/CMakeFiles/ContinuousCoverage.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/ContinuousCoverage.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tinyxml2/CMakeFiles/ContinuousCoverage.dir/rule
+.PHONY : lib/CMakeFiles/ContinuousCoverage.dir/rule
 
 # Convenience name for target.
-ContinuousCoverage: tinyxml2/CMakeFiles/ContinuousCoverage.dir/rule
+ContinuousCoverage: lib/CMakeFiles/ContinuousCoverage.dir/rule
 
 .PHONY : ContinuousCoverage
 
 # clean rule for target.
-tinyxml2/CMakeFiles/ContinuousCoverage.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ContinuousCoverage.dir/build.make tinyxml2/CMakeFiles/ContinuousCoverage.dir/clean
-.PHONY : tinyxml2/CMakeFiles/ContinuousCoverage.dir/clean
+lib/CMakeFiles/ContinuousCoverage.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ContinuousCoverage.dir/build.make lib/CMakeFiles/ContinuousCoverage.dir/clean
+.PHONY : lib/CMakeFiles/ContinuousCoverage.dir/clean
 
 #=============================================================================
-# Target rules for target tinyxml2/CMakeFiles/ContinuousTest.dir
+# Target rules for target lib/CMakeFiles/ContinuousTest.dir
 
 # All Build rule for target.
-tinyxml2/CMakeFiles/ContinuousTest.dir/all:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ContinuousTest.dir/build.make tinyxml2/CMakeFiles/ContinuousTest.dir/depend
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ContinuousTest.dir/build.make tinyxml2/CMakeFiles/ContinuousTest.dir/build
+lib/CMakeFiles/ContinuousTest.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ContinuousTest.dir/build.make lib/CMakeFiles/ContinuousTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ContinuousTest.dir/build.make lib/CMakeFiles/ContinuousTest.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num= "Built target ContinuousTest"
-.PHONY : tinyxml2/CMakeFiles/ContinuousTest.dir/all
+.PHONY : lib/CMakeFiles/ContinuousTest.dir/all
 
 # Build rule for subdir invocation for target.
-tinyxml2/CMakeFiles/ContinuousTest.dir/rule: cmake_check_build_system
+lib/CMakeFiles/ContinuousTest.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyxml2/CMakeFiles/ContinuousTest.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/ContinuousTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tinyxml2/CMakeFiles/ContinuousTest.dir/rule
+.PHONY : lib/CMakeFiles/ContinuousTest.dir/rule
 
 # Convenience name for target.
-ContinuousTest: tinyxml2/CMakeFiles/ContinuousTest.dir/rule
+ContinuousTest: lib/CMakeFiles/ContinuousTest.dir/rule
 
 .PHONY : ContinuousTest
 
 # clean rule for target.
-tinyxml2/CMakeFiles/ContinuousTest.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ContinuousTest.dir/build.make tinyxml2/CMakeFiles/ContinuousTest.dir/clean
-.PHONY : tinyxml2/CMakeFiles/ContinuousTest.dir/clean
+lib/CMakeFiles/ContinuousTest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ContinuousTest.dir/build.make lib/CMakeFiles/ContinuousTest.dir/clean
+.PHONY : lib/CMakeFiles/ContinuousTest.dir/clean
 
 #=============================================================================
-# Target rules for target tinyxml2/CMakeFiles/ContinuousBuild.dir
+# Target rules for target lib/CMakeFiles/ContinuousBuild.dir
 
 # All Build rule for target.
-tinyxml2/CMakeFiles/ContinuousBuild.dir/all:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ContinuousBuild.dir/build.make tinyxml2/CMakeFiles/ContinuousBuild.dir/depend
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ContinuousBuild.dir/build.make tinyxml2/CMakeFiles/ContinuousBuild.dir/build
+lib/CMakeFiles/ContinuousBuild.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ContinuousBuild.dir/build.make lib/CMakeFiles/ContinuousBuild.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ContinuousBuild.dir/build.make lib/CMakeFiles/ContinuousBuild.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num= "Built target ContinuousBuild"
-.PHONY : tinyxml2/CMakeFiles/ContinuousBuild.dir/all
+.PHONY : lib/CMakeFiles/ContinuousBuild.dir/all
 
 # Build rule for subdir invocation for target.
-tinyxml2/CMakeFiles/ContinuousBuild.dir/rule: cmake_check_build_system
+lib/CMakeFiles/ContinuousBuild.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyxml2/CMakeFiles/ContinuousBuild.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/ContinuousBuild.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tinyxml2/CMakeFiles/ContinuousBuild.dir/rule
+.PHONY : lib/CMakeFiles/ContinuousBuild.dir/rule
 
 # Convenience name for target.
-ContinuousBuild: tinyxml2/CMakeFiles/ContinuousBuild.dir/rule
+ContinuousBuild: lib/CMakeFiles/ContinuousBuild.dir/rule
 
 .PHONY : ContinuousBuild
 
 # clean rule for target.
-tinyxml2/CMakeFiles/ContinuousBuild.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ContinuousBuild.dir/build.make tinyxml2/CMakeFiles/ContinuousBuild.dir/clean
-.PHONY : tinyxml2/CMakeFiles/ContinuousBuild.dir/clean
+lib/CMakeFiles/ContinuousBuild.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ContinuousBuild.dir/build.make lib/CMakeFiles/ContinuousBuild.dir/clean
+.PHONY : lib/CMakeFiles/ContinuousBuild.dir/clean
 
 #=============================================================================
-# Target rules for target tinyxml2/CMakeFiles/ContinuousStart.dir
+# Target rules for target lib/CMakeFiles/ContinuousStart.dir
 
 # All Build rule for target.
-tinyxml2/CMakeFiles/ContinuousStart.dir/all:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ContinuousStart.dir/build.make tinyxml2/CMakeFiles/ContinuousStart.dir/depend
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ContinuousStart.dir/build.make tinyxml2/CMakeFiles/ContinuousStart.dir/build
+lib/CMakeFiles/ContinuousStart.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ContinuousStart.dir/build.make lib/CMakeFiles/ContinuousStart.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ContinuousStart.dir/build.make lib/CMakeFiles/ContinuousStart.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num= "Built target ContinuousStart"
-.PHONY : tinyxml2/CMakeFiles/ContinuousStart.dir/all
+.PHONY : lib/CMakeFiles/ContinuousStart.dir/all
 
 # Build rule for subdir invocation for target.
-tinyxml2/CMakeFiles/ContinuousStart.dir/rule: cmake_check_build_system
+lib/CMakeFiles/ContinuousStart.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyxml2/CMakeFiles/ContinuousStart.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/ContinuousStart.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tinyxml2/CMakeFiles/ContinuousStart.dir/rule
+.PHONY : lib/CMakeFiles/ContinuousStart.dir/rule
 
 # Convenience name for target.
-ContinuousStart: tinyxml2/CMakeFiles/ContinuousStart.dir/rule
+ContinuousStart: lib/CMakeFiles/ContinuousStart.dir/rule
 
 .PHONY : ContinuousStart
 
 # clean rule for target.
-tinyxml2/CMakeFiles/ContinuousStart.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ContinuousStart.dir/build.make tinyxml2/CMakeFiles/ContinuousStart.dir/clean
-.PHONY : tinyxml2/CMakeFiles/ContinuousStart.dir/clean
+lib/CMakeFiles/ContinuousStart.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ContinuousStart.dir/build.make lib/CMakeFiles/ContinuousStart.dir/clean
+.PHONY : lib/CMakeFiles/ContinuousStart.dir/clean
 
 #=============================================================================
-# Target rules for target tinyxml2/CMakeFiles/ExperimentalBuild.dir
+# Target rules for target lib/CMakeFiles/ExperimentalBuild.dir
 
 # All Build rule for target.
-tinyxml2/CMakeFiles/ExperimentalBuild.dir/all:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ExperimentalBuild.dir/build.make tinyxml2/CMakeFiles/ExperimentalBuild.dir/depend
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ExperimentalBuild.dir/build.make tinyxml2/CMakeFiles/ExperimentalBuild.dir/build
+lib/CMakeFiles/ExperimentalBuild.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ExperimentalBuild.dir/build.make lib/CMakeFiles/ExperimentalBuild.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ExperimentalBuild.dir/build.make lib/CMakeFiles/ExperimentalBuild.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num= "Built target ExperimentalBuild"
-.PHONY : tinyxml2/CMakeFiles/ExperimentalBuild.dir/all
+.PHONY : lib/CMakeFiles/ExperimentalBuild.dir/all
 
 # Build rule for subdir invocation for target.
-tinyxml2/CMakeFiles/ExperimentalBuild.dir/rule: cmake_check_build_system
+lib/CMakeFiles/ExperimentalBuild.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyxml2/CMakeFiles/ExperimentalBuild.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/ExperimentalBuild.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tinyxml2/CMakeFiles/ExperimentalBuild.dir/rule
+.PHONY : lib/CMakeFiles/ExperimentalBuild.dir/rule
 
 # Convenience name for target.
-ExperimentalBuild: tinyxml2/CMakeFiles/ExperimentalBuild.dir/rule
+ExperimentalBuild: lib/CMakeFiles/ExperimentalBuild.dir/rule
 
 .PHONY : ExperimentalBuild
 
 # clean rule for target.
-tinyxml2/CMakeFiles/ExperimentalBuild.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ExperimentalBuild.dir/build.make tinyxml2/CMakeFiles/ExperimentalBuild.dir/clean
-.PHONY : tinyxml2/CMakeFiles/ExperimentalBuild.dir/clean
+lib/CMakeFiles/ExperimentalBuild.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ExperimentalBuild.dir/build.make lib/CMakeFiles/ExperimentalBuild.dir/clean
+.PHONY : lib/CMakeFiles/ExperimentalBuild.dir/clean
 
 #=============================================================================
-# Target rules for target tinyxml2/CMakeFiles/ExperimentalCoverage.dir
+# Target rules for target lib/CMakeFiles/ExperimentalCoverage.dir
 
 # All Build rule for target.
-tinyxml2/CMakeFiles/ExperimentalCoverage.dir/all:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ExperimentalCoverage.dir/build.make tinyxml2/CMakeFiles/ExperimentalCoverage.dir/depend
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ExperimentalCoverage.dir/build.make tinyxml2/CMakeFiles/ExperimentalCoverage.dir/build
+lib/CMakeFiles/ExperimentalCoverage.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ExperimentalCoverage.dir/build.make lib/CMakeFiles/ExperimentalCoverage.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ExperimentalCoverage.dir/build.make lib/CMakeFiles/ExperimentalCoverage.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num= "Built target ExperimentalCoverage"
-.PHONY : tinyxml2/CMakeFiles/ExperimentalCoverage.dir/all
+.PHONY : lib/CMakeFiles/ExperimentalCoverage.dir/all
 
 # Build rule for subdir invocation for target.
-tinyxml2/CMakeFiles/ExperimentalCoverage.dir/rule: cmake_check_build_system
+lib/CMakeFiles/ExperimentalCoverage.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyxml2/CMakeFiles/ExperimentalCoverage.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/ExperimentalCoverage.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tinyxml2/CMakeFiles/ExperimentalCoverage.dir/rule
+.PHONY : lib/CMakeFiles/ExperimentalCoverage.dir/rule
 
 # Convenience name for target.
-ExperimentalCoverage: tinyxml2/CMakeFiles/ExperimentalCoverage.dir/rule
+ExperimentalCoverage: lib/CMakeFiles/ExperimentalCoverage.dir/rule
 
 .PHONY : ExperimentalCoverage
 
 # clean rule for target.
-tinyxml2/CMakeFiles/ExperimentalCoverage.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ExperimentalCoverage.dir/build.make tinyxml2/CMakeFiles/ExperimentalCoverage.dir/clean
-.PHONY : tinyxml2/CMakeFiles/ExperimentalCoverage.dir/clean
+lib/CMakeFiles/ExperimentalCoverage.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ExperimentalCoverage.dir/build.make lib/CMakeFiles/ExperimentalCoverage.dir/clean
+.PHONY : lib/CMakeFiles/ExperimentalCoverage.dir/clean
 
 #=============================================================================
-# Target rules for target tinyxml2/CMakeFiles/ExperimentalSubmit.dir
+# Target rules for target lib/CMakeFiles/ExperimentalSubmit.dir
 
 # All Build rule for target.
-tinyxml2/CMakeFiles/ExperimentalSubmit.dir/all:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ExperimentalSubmit.dir/build.make tinyxml2/CMakeFiles/ExperimentalSubmit.dir/depend
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ExperimentalSubmit.dir/build.make tinyxml2/CMakeFiles/ExperimentalSubmit.dir/build
+lib/CMakeFiles/ExperimentalSubmit.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ExperimentalSubmit.dir/build.make lib/CMakeFiles/ExperimentalSubmit.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ExperimentalSubmit.dir/build.make lib/CMakeFiles/ExperimentalSubmit.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num= "Built target ExperimentalSubmit"
-.PHONY : tinyxml2/CMakeFiles/ExperimentalSubmit.dir/all
+.PHONY : lib/CMakeFiles/ExperimentalSubmit.dir/all
 
 # Build rule for subdir invocation for target.
-tinyxml2/CMakeFiles/ExperimentalSubmit.dir/rule: cmake_check_build_system
+lib/CMakeFiles/ExperimentalSubmit.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyxml2/CMakeFiles/ExperimentalSubmit.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/ExperimentalSubmit.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tinyxml2/CMakeFiles/ExperimentalSubmit.dir/rule
+.PHONY : lib/CMakeFiles/ExperimentalSubmit.dir/rule
 
 # Convenience name for target.
-ExperimentalSubmit: tinyxml2/CMakeFiles/ExperimentalSubmit.dir/rule
+ExperimentalSubmit: lib/CMakeFiles/ExperimentalSubmit.dir/rule
 
 .PHONY : ExperimentalSubmit
 
 # clean rule for target.
-tinyxml2/CMakeFiles/ExperimentalSubmit.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ExperimentalSubmit.dir/build.make tinyxml2/CMakeFiles/ExperimentalSubmit.dir/clean
-.PHONY : tinyxml2/CMakeFiles/ExperimentalSubmit.dir/clean
+lib/CMakeFiles/ExperimentalSubmit.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ExperimentalSubmit.dir/build.make lib/CMakeFiles/ExperimentalSubmit.dir/clean
+.PHONY : lib/CMakeFiles/ExperimentalSubmit.dir/clean
 
 #=============================================================================
-# Target rules for target tinyxml2/CMakeFiles/ContinuousUpdate.dir
+# Target rules for target lib/CMakeFiles/ContinuousUpdate.dir
 
 # All Build rule for target.
-tinyxml2/CMakeFiles/ContinuousUpdate.dir/all:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ContinuousUpdate.dir/build.make tinyxml2/CMakeFiles/ContinuousUpdate.dir/depend
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ContinuousUpdate.dir/build.make tinyxml2/CMakeFiles/ContinuousUpdate.dir/build
+lib/CMakeFiles/ContinuousUpdate.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ContinuousUpdate.dir/build.make lib/CMakeFiles/ContinuousUpdate.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ContinuousUpdate.dir/build.make lib/CMakeFiles/ContinuousUpdate.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num= "Built target ContinuousUpdate"
-.PHONY : tinyxml2/CMakeFiles/ContinuousUpdate.dir/all
+.PHONY : lib/CMakeFiles/ContinuousUpdate.dir/all
 
 # Build rule for subdir invocation for target.
-tinyxml2/CMakeFiles/ContinuousUpdate.dir/rule: cmake_check_build_system
+lib/CMakeFiles/ContinuousUpdate.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyxml2/CMakeFiles/ContinuousUpdate.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/ContinuousUpdate.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tinyxml2/CMakeFiles/ContinuousUpdate.dir/rule
+.PHONY : lib/CMakeFiles/ContinuousUpdate.dir/rule
 
 # Convenience name for target.
-ContinuousUpdate: tinyxml2/CMakeFiles/ContinuousUpdate.dir/rule
+ContinuousUpdate: lib/CMakeFiles/ContinuousUpdate.dir/rule
 
 .PHONY : ContinuousUpdate
 
 # clean rule for target.
-tinyxml2/CMakeFiles/ContinuousUpdate.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ContinuousUpdate.dir/build.make tinyxml2/CMakeFiles/ContinuousUpdate.dir/clean
-.PHONY : tinyxml2/CMakeFiles/ContinuousUpdate.dir/clean
+lib/CMakeFiles/ContinuousUpdate.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ContinuousUpdate.dir/build.make lib/CMakeFiles/ContinuousUpdate.dir/clean
+.PHONY : lib/CMakeFiles/ContinuousUpdate.dir/clean
 
 #=============================================================================
-# Target rules for target tinyxml2/CMakeFiles/xmltest.dir
+# Target rules for target lib/CMakeFiles/xmltest.dir
 
 # All Build rule for target.
-tinyxml2/CMakeFiles/xmltest.dir/all: tinyxml2/CMakeFiles/tinyxml2.dir/all
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/xmltest.dir/build.make tinyxml2/CMakeFiles/xmltest.dir/depend
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/xmltest.dir/build.make tinyxml2/CMakeFiles/xmltest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num=7,8 "Built target xmltest"
-.PHONY : tinyxml2/CMakeFiles/xmltest.dir/all
+lib/CMakeFiles/xmltest.dir/all: lib/CMakeFiles/tinyxml2.dir/all
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/xmltest.dir/build.make lib/CMakeFiles/xmltest.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/xmltest.dir/build.make lib/CMakeFiles/xmltest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num=10,11 "Built target xmltest"
+.PHONY : lib/CMakeFiles/xmltest.dir/all
 
 # Build rule for subdir invocation for target.
-tinyxml2/CMakeFiles/xmltest.dir/rule: cmake_check_build_system
+lib/CMakeFiles/xmltest.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyxml2/CMakeFiles/xmltest.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/xmltest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tinyxml2/CMakeFiles/xmltest.dir/rule
+.PHONY : lib/CMakeFiles/xmltest.dir/rule
 
 # Convenience name for target.
-xmltest: tinyxml2/CMakeFiles/xmltest.dir/rule
+xmltest: lib/CMakeFiles/xmltest.dir/rule
 
 .PHONY : xmltest
 
 # clean rule for target.
-tinyxml2/CMakeFiles/xmltest.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/xmltest.dir/build.make tinyxml2/CMakeFiles/xmltest.dir/clean
-.PHONY : tinyxml2/CMakeFiles/xmltest.dir/clean
+lib/CMakeFiles/xmltest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/xmltest.dir/build.make lib/CMakeFiles/xmltest.dir/clean
+.PHONY : lib/CMakeFiles/xmltest.dir/clean
 
 #=============================================================================
-# Target rules for target tinyxml2/CMakeFiles/ExperimentalUpdate.dir
+# Target rules for target lib/CMakeFiles/ExperimentalUpdate.dir
 
 # All Build rule for target.
-tinyxml2/CMakeFiles/ExperimentalUpdate.dir/all:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ExperimentalUpdate.dir/build.make tinyxml2/CMakeFiles/ExperimentalUpdate.dir/depend
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ExperimentalUpdate.dir/build.make tinyxml2/CMakeFiles/ExperimentalUpdate.dir/build
+lib/CMakeFiles/ExperimentalUpdate.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ExperimentalUpdate.dir/build.make lib/CMakeFiles/ExperimentalUpdate.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ExperimentalUpdate.dir/build.make lib/CMakeFiles/ExperimentalUpdate.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num= "Built target ExperimentalUpdate"
-.PHONY : tinyxml2/CMakeFiles/ExperimentalUpdate.dir/all
+.PHONY : lib/CMakeFiles/ExperimentalUpdate.dir/all
 
 # Build rule for subdir invocation for target.
-tinyxml2/CMakeFiles/ExperimentalUpdate.dir/rule: cmake_check_build_system
+lib/CMakeFiles/ExperimentalUpdate.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyxml2/CMakeFiles/ExperimentalUpdate.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/ExperimentalUpdate.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tinyxml2/CMakeFiles/ExperimentalUpdate.dir/rule
+.PHONY : lib/CMakeFiles/ExperimentalUpdate.dir/rule
 
 # Convenience name for target.
-ExperimentalUpdate: tinyxml2/CMakeFiles/ExperimentalUpdate.dir/rule
+ExperimentalUpdate: lib/CMakeFiles/ExperimentalUpdate.dir/rule
 
 .PHONY : ExperimentalUpdate
 
 # clean rule for target.
-tinyxml2/CMakeFiles/ExperimentalUpdate.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ExperimentalUpdate.dir/build.make tinyxml2/CMakeFiles/ExperimentalUpdate.dir/clean
-.PHONY : tinyxml2/CMakeFiles/ExperimentalUpdate.dir/clean
+lib/CMakeFiles/ExperimentalUpdate.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ExperimentalUpdate.dir/build.make lib/CMakeFiles/ExperimentalUpdate.dir/clean
+.PHONY : lib/CMakeFiles/ExperimentalUpdate.dir/clean
 
 #=============================================================================
-# Target rules for target tinyxml2/CMakeFiles/ExperimentalStart.dir
+# Target rules for target lib/CMakeFiles/ExperimentalStart.dir
 
 # All Build rule for target.
-tinyxml2/CMakeFiles/ExperimentalStart.dir/all:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ExperimentalStart.dir/build.make tinyxml2/CMakeFiles/ExperimentalStart.dir/depend
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ExperimentalStart.dir/build.make tinyxml2/CMakeFiles/ExperimentalStart.dir/build
+lib/CMakeFiles/ExperimentalStart.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ExperimentalStart.dir/build.make lib/CMakeFiles/ExperimentalStart.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ExperimentalStart.dir/build.make lib/CMakeFiles/ExperimentalStart.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num= "Built target ExperimentalStart"
-.PHONY : tinyxml2/CMakeFiles/ExperimentalStart.dir/all
+.PHONY : lib/CMakeFiles/ExperimentalStart.dir/all
 
 # Build rule for subdir invocation for target.
-tinyxml2/CMakeFiles/ExperimentalStart.dir/rule: cmake_check_build_system
+lib/CMakeFiles/ExperimentalStart.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyxml2/CMakeFiles/ExperimentalStart.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/ExperimentalStart.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tinyxml2/CMakeFiles/ExperimentalStart.dir/rule
+.PHONY : lib/CMakeFiles/ExperimentalStart.dir/rule
 
 # Convenience name for target.
-ExperimentalStart: tinyxml2/CMakeFiles/ExperimentalStart.dir/rule
+ExperimentalStart: lib/CMakeFiles/ExperimentalStart.dir/rule
 
 .PHONY : ExperimentalStart
 
 # clean rule for target.
-tinyxml2/CMakeFiles/ExperimentalStart.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ExperimentalStart.dir/build.make tinyxml2/CMakeFiles/ExperimentalStart.dir/clean
-.PHONY : tinyxml2/CMakeFiles/ExperimentalStart.dir/clean
+lib/CMakeFiles/ExperimentalStart.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ExperimentalStart.dir/build.make lib/CMakeFiles/ExperimentalStart.dir/clean
+.PHONY : lib/CMakeFiles/ExperimentalStart.dir/clean
 
 #=============================================================================
-# Target rules for target tinyxml2/CMakeFiles/ContinuousSubmit.dir
+# Target rules for target lib/CMakeFiles/ContinuousSubmit.dir
 
 # All Build rule for target.
-tinyxml2/CMakeFiles/ContinuousSubmit.dir/all:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ContinuousSubmit.dir/build.make tinyxml2/CMakeFiles/ContinuousSubmit.dir/depend
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ContinuousSubmit.dir/build.make tinyxml2/CMakeFiles/ContinuousSubmit.dir/build
+lib/CMakeFiles/ContinuousSubmit.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ContinuousSubmit.dir/build.make lib/CMakeFiles/ContinuousSubmit.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ContinuousSubmit.dir/build.make lib/CMakeFiles/ContinuousSubmit.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num= "Built target ContinuousSubmit"
-.PHONY : tinyxml2/CMakeFiles/ContinuousSubmit.dir/all
+.PHONY : lib/CMakeFiles/ContinuousSubmit.dir/all
 
 # Build rule for subdir invocation for target.
-tinyxml2/CMakeFiles/ContinuousSubmit.dir/rule: cmake_check_build_system
+lib/CMakeFiles/ContinuousSubmit.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyxml2/CMakeFiles/ContinuousSubmit.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/ContinuousSubmit.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tinyxml2/CMakeFiles/ContinuousSubmit.dir/rule
+.PHONY : lib/CMakeFiles/ContinuousSubmit.dir/rule
 
 # Convenience name for target.
-ContinuousSubmit: tinyxml2/CMakeFiles/ContinuousSubmit.dir/rule
+ContinuousSubmit: lib/CMakeFiles/ContinuousSubmit.dir/rule
 
 .PHONY : ContinuousSubmit
 
 # clean rule for target.
-tinyxml2/CMakeFiles/ContinuousSubmit.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ContinuousSubmit.dir/build.make tinyxml2/CMakeFiles/ContinuousSubmit.dir/clean
-.PHONY : tinyxml2/CMakeFiles/ContinuousSubmit.dir/clean
+lib/CMakeFiles/ContinuousSubmit.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ContinuousSubmit.dir/build.make lib/CMakeFiles/ContinuousSubmit.dir/clean
+.PHONY : lib/CMakeFiles/ContinuousSubmit.dir/clean
 
 #=============================================================================
-# Target rules for target tinyxml2/CMakeFiles/ExperimentalTest.dir
+# Target rules for target lib/CMakeFiles/ExperimentalTest.dir
 
 # All Build rule for target.
-tinyxml2/CMakeFiles/ExperimentalTest.dir/all:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ExperimentalTest.dir/build.make tinyxml2/CMakeFiles/ExperimentalTest.dir/depend
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ExperimentalTest.dir/build.make tinyxml2/CMakeFiles/ExperimentalTest.dir/build
+lib/CMakeFiles/ExperimentalTest.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ExperimentalTest.dir/build.make lib/CMakeFiles/ExperimentalTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ExperimentalTest.dir/build.make lib/CMakeFiles/ExperimentalTest.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num= "Built target ExperimentalTest"
-.PHONY : tinyxml2/CMakeFiles/ExperimentalTest.dir/all
+.PHONY : lib/CMakeFiles/ExperimentalTest.dir/all
 
 # Build rule for subdir invocation for target.
-tinyxml2/CMakeFiles/ExperimentalTest.dir/rule: cmake_check_build_system
+lib/CMakeFiles/ExperimentalTest.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyxml2/CMakeFiles/ExperimentalTest.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/ExperimentalTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tinyxml2/CMakeFiles/ExperimentalTest.dir/rule
+.PHONY : lib/CMakeFiles/ExperimentalTest.dir/rule
 
 # Convenience name for target.
-ExperimentalTest: tinyxml2/CMakeFiles/ExperimentalTest.dir/rule
+ExperimentalTest: lib/CMakeFiles/ExperimentalTest.dir/rule
 
 .PHONY : ExperimentalTest
 
 # clean rule for target.
-tinyxml2/CMakeFiles/ExperimentalTest.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ExperimentalTest.dir/build.make tinyxml2/CMakeFiles/ExperimentalTest.dir/clean
-.PHONY : tinyxml2/CMakeFiles/ExperimentalTest.dir/clean
+lib/CMakeFiles/ExperimentalTest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ExperimentalTest.dir/build.make lib/CMakeFiles/ExperimentalTest.dir/clean
+.PHONY : lib/CMakeFiles/ExperimentalTest.dir/clean
 
 #=============================================================================
-# Target rules for target tinyxml2/CMakeFiles/NightlySubmit.dir
+# Target rules for target lib/CMakeFiles/NightlySubmit.dir
 
 # All Build rule for target.
-tinyxml2/CMakeFiles/NightlySubmit.dir/all:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlySubmit.dir/build.make tinyxml2/CMakeFiles/NightlySubmit.dir/depend
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlySubmit.dir/build.make tinyxml2/CMakeFiles/NightlySubmit.dir/build
+lib/CMakeFiles/NightlySubmit.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlySubmit.dir/build.make lib/CMakeFiles/NightlySubmit.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlySubmit.dir/build.make lib/CMakeFiles/NightlySubmit.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num= "Built target NightlySubmit"
-.PHONY : tinyxml2/CMakeFiles/NightlySubmit.dir/all
+.PHONY : lib/CMakeFiles/NightlySubmit.dir/all
 
 # Build rule for subdir invocation for target.
-tinyxml2/CMakeFiles/NightlySubmit.dir/rule: cmake_check_build_system
+lib/CMakeFiles/NightlySubmit.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyxml2/CMakeFiles/NightlySubmit.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/NightlySubmit.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tinyxml2/CMakeFiles/NightlySubmit.dir/rule
+.PHONY : lib/CMakeFiles/NightlySubmit.dir/rule
 
 # Convenience name for target.
-NightlySubmit: tinyxml2/CMakeFiles/NightlySubmit.dir/rule
+NightlySubmit: lib/CMakeFiles/NightlySubmit.dir/rule
 
 .PHONY : NightlySubmit
 
 # clean rule for target.
-tinyxml2/CMakeFiles/NightlySubmit.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlySubmit.dir/build.make tinyxml2/CMakeFiles/NightlySubmit.dir/clean
-.PHONY : tinyxml2/CMakeFiles/NightlySubmit.dir/clean
+lib/CMakeFiles/NightlySubmit.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlySubmit.dir/build.make lib/CMakeFiles/NightlySubmit.dir/clean
+.PHONY : lib/CMakeFiles/NightlySubmit.dir/clean
 
 #=============================================================================
-# Target rules for target tinyxml2/CMakeFiles/NightlyMemCheck.dir
+# Target rules for target lib/CMakeFiles/NightlyMemCheck.dir
 
 # All Build rule for target.
-tinyxml2/CMakeFiles/NightlyMemCheck.dir/all:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlyMemCheck.dir/build.make tinyxml2/CMakeFiles/NightlyMemCheck.dir/depend
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlyMemCheck.dir/build.make tinyxml2/CMakeFiles/NightlyMemCheck.dir/build
+lib/CMakeFiles/NightlyMemCheck.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlyMemCheck.dir/build.make lib/CMakeFiles/NightlyMemCheck.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlyMemCheck.dir/build.make lib/CMakeFiles/NightlyMemCheck.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num= "Built target NightlyMemCheck"
-.PHONY : tinyxml2/CMakeFiles/NightlyMemCheck.dir/all
+.PHONY : lib/CMakeFiles/NightlyMemCheck.dir/all
 
 # Build rule for subdir invocation for target.
-tinyxml2/CMakeFiles/NightlyMemCheck.dir/rule: cmake_check_build_system
+lib/CMakeFiles/NightlyMemCheck.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyxml2/CMakeFiles/NightlyMemCheck.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/NightlyMemCheck.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tinyxml2/CMakeFiles/NightlyMemCheck.dir/rule
+.PHONY : lib/CMakeFiles/NightlyMemCheck.dir/rule
 
 # Convenience name for target.
-NightlyMemCheck: tinyxml2/CMakeFiles/NightlyMemCheck.dir/rule
+NightlyMemCheck: lib/CMakeFiles/NightlyMemCheck.dir/rule
 
 .PHONY : NightlyMemCheck
 
 # clean rule for target.
-tinyxml2/CMakeFiles/NightlyMemCheck.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlyMemCheck.dir/build.make tinyxml2/CMakeFiles/NightlyMemCheck.dir/clean
-.PHONY : tinyxml2/CMakeFiles/NightlyMemCheck.dir/clean
+lib/CMakeFiles/NightlyMemCheck.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlyMemCheck.dir/build.make lib/CMakeFiles/NightlyMemCheck.dir/clean
+.PHONY : lib/CMakeFiles/NightlyMemCheck.dir/clean
 
 #=============================================================================
-# Target rules for target tinyxml2/CMakeFiles/ExperimentalConfigure.dir
+# Target rules for target lib/CMakeFiles/ExperimentalConfigure.dir
 
 # All Build rule for target.
-tinyxml2/CMakeFiles/ExperimentalConfigure.dir/all:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ExperimentalConfigure.dir/build.make tinyxml2/CMakeFiles/ExperimentalConfigure.dir/depend
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ExperimentalConfigure.dir/build.make tinyxml2/CMakeFiles/ExperimentalConfigure.dir/build
+lib/CMakeFiles/ExperimentalConfigure.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ExperimentalConfigure.dir/build.make lib/CMakeFiles/ExperimentalConfigure.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ExperimentalConfigure.dir/build.make lib/CMakeFiles/ExperimentalConfigure.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num= "Built target ExperimentalConfigure"
-.PHONY : tinyxml2/CMakeFiles/ExperimentalConfigure.dir/all
+.PHONY : lib/CMakeFiles/ExperimentalConfigure.dir/all
 
 # Build rule for subdir invocation for target.
-tinyxml2/CMakeFiles/ExperimentalConfigure.dir/rule: cmake_check_build_system
+lib/CMakeFiles/ExperimentalConfigure.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyxml2/CMakeFiles/ExperimentalConfigure.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/ExperimentalConfigure.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tinyxml2/CMakeFiles/ExperimentalConfigure.dir/rule
+.PHONY : lib/CMakeFiles/ExperimentalConfigure.dir/rule
 
 # Convenience name for target.
-ExperimentalConfigure: tinyxml2/CMakeFiles/ExperimentalConfigure.dir/rule
+ExperimentalConfigure: lib/CMakeFiles/ExperimentalConfigure.dir/rule
 
 .PHONY : ExperimentalConfigure
 
 # clean rule for target.
-tinyxml2/CMakeFiles/ExperimentalConfigure.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ExperimentalConfigure.dir/build.make tinyxml2/CMakeFiles/ExperimentalConfigure.dir/clean
-.PHONY : tinyxml2/CMakeFiles/ExperimentalConfigure.dir/clean
+lib/CMakeFiles/ExperimentalConfigure.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ExperimentalConfigure.dir/build.make lib/CMakeFiles/ExperimentalConfigure.dir/clean
+.PHONY : lib/CMakeFiles/ExperimentalConfigure.dir/clean
 
 #=============================================================================
-# Target rules for target tinyxml2/CMakeFiles/NightlyCoverage.dir
+# Target rules for target lib/CMakeFiles/NightlyCoverage.dir
 
 # All Build rule for target.
-tinyxml2/CMakeFiles/NightlyCoverage.dir/all:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlyCoverage.dir/build.make tinyxml2/CMakeFiles/NightlyCoverage.dir/depend
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlyCoverage.dir/build.make tinyxml2/CMakeFiles/NightlyCoverage.dir/build
+lib/CMakeFiles/NightlyCoverage.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlyCoverage.dir/build.make lib/CMakeFiles/NightlyCoverage.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlyCoverage.dir/build.make lib/CMakeFiles/NightlyCoverage.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num= "Built target NightlyCoverage"
-.PHONY : tinyxml2/CMakeFiles/NightlyCoverage.dir/all
+.PHONY : lib/CMakeFiles/NightlyCoverage.dir/all
 
 # Build rule for subdir invocation for target.
-tinyxml2/CMakeFiles/NightlyCoverage.dir/rule: cmake_check_build_system
+lib/CMakeFiles/NightlyCoverage.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyxml2/CMakeFiles/NightlyCoverage.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/NightlyCoverage.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tinyxml2/CMakeFiles/NightlyCoverage.dir/rule
+.PHONY : lib/CMakeFiles/NightlyCoverage.dir/rule
 
 # Convenience name for target.
-NightlyCoverage: tinyxml2/CMakeFiles/NightlyCoverage.dir/rule
+NightlyCoverage: lib/CMakeFiles/NightlyCoverage.dir/rule
 
 .PHONY : NightlyCoverage
 
 # clean rule for target.
-tinyxml2/CMakeFiles/NightlyCoverage.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlyCoverage.dir/build.make tinyxml2/CMakeFiles/NightlyCoverage.dir/clean
-.PHONY : tinyxml2/CMakeFiles/NightlyCoverage.dir/clean
+lib/CMakeFiles/NightlyCoverage.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlyCoverage.dir/build.make lib/CMakeFiles/NightlyCoverage.dir/clean
+.PHONY : lib/CMakeFiles/NightlyCoverage.dir/clean
 
 #=============================================================================
-# Target rules for target tinyxml2/CMakeFiles/NightlyTest.dir
+# Target rules for target lib/CMakeFiles/NightlyTest.dir
 
 # All Build rule for target.
-tinyxml2/CMakeFiles/NightlyTest.dir/all:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlyTest.dir/build.make tinyxml2/CMakeFiles/NightlyTest.dir/depend
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlyTest.dir/build.make tinyxml2/CMakeFiles/NightlyTest.dir/build
+lib/CMakeFiles/NightlyTest.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlyTest.dir/build.make lib/CMakeFiles/NightlyTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlyTest.dir/build.make lib/CMakeFiles/NightlyTest.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num= "Built target NightlyTest"
-.PHONY : tinyxml2/CMakeFiles/NightlyTest.dir/all
+.PHONY : lib/CMakeFiles/NightlyTest.dir/all
 
 # Build rule for subdir invocation for target.
-tinyxml2/CMakeFiles/NightlyTest.dir/rule: cmake_check_build_system
+lib/CMakeFiles/NightlyTest.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyxml2/CMakeFiles/NightlyTest.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/NightlyTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tinyxml2/CMakeFiles/NightlyTest.dir/rule
+.PHONY : lib/CMakeFiles/NightlyTest.dir/rule
 
 # Convenience name for target.
-NightlyTest: tinyxml2/CMakeFiles/NightlyTest.dir/rule
+NightlyTest: lib/CMakeFiles/NightlyTest.dir/rule
 
 .PHONY : NightlyTest
 
 # clean rule for target.
-tinyxml2/CMakeFiles/NightlyTest.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlyTest.dir/build.make tinyxml2/CMakeFiles/NightlyTest.dir/clean
-.PHONY : tinyxml2/CMakeFiles/NightlyTest.dir/clean
+lib/CMakeFiles/NightlyTest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlyTest.dir/build.make lib/CMakeFiles/NightlyTest.dir/clean
+.PHONY : lib/CMakeFiles/NightlyTest.dir/clean
 
 #=============================================================================
-# Target rules for target tinyxml2/CMakeFiles/uninstall.dir
+# Target rules for target lib/CMakeFiles/uninstall.dir
 
 # All Build rule for target.
-tinyxml2/CMakeFiles/uninstall.dir/all:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/uninstall.dir/build.make tinyxml2/CMakeFiles/uninstall.dir/depend
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/uninstall.dir/build.make tinyxml2/CMakeFiles/uninstall.dir/build
+lib/CMakeFiles/uninstall.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/uninstall.dir/build.make lib/CMakeFiles/uninstall.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/uninstall.dir/build.make lib/CMakeFiles/uninstall.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num= "Built target uninstall"
-.PHONY : tinyxml2/CMakeFiles/uninstall.dir/all
+.PHONY : lib/CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
-tinyxml2/CMakeFiles/uninstall.dir/rule: cmake_check_build_system
+lib/CMakeFiles/uninstall.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyxml2/CMakeFiles/uninstall.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/uninstall.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tinyxml2/CMakeFiles/uninstall.dir/rule
+.PHONY : lib/CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
-uninstall: tinyxml2/CMakeFiles/uninstall.dir/rule
+uninstall: lib/CMakeFiles/uninstall.dir/rule
 
 .PHONY : uninstall
 
 # clean rule for target.
-tinyxml2/CMakeFiles/uninstall.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/uninstall.dir/build.make tinyxml2/CMakeFiles/uninstall.dir/clean
-.PHONY : tinyxml2/CMakeFiles/uninstall.dir/clean
+lib/CMakeFiles/uninstall.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/uninstall.dir/build.make lib/CMakeFiles/uninstall.dir/clean
+.PHONY : lib/CMakeFiles/uninstall.dir/clean
 
 #=============================================================================
-# Target rules for target tinyxml2/CMakeFiles/tinyxml2.dir
+# Target rules for target lib/CMakeFiles/tinyxml2.dir
 
 # All Build rule for target.
-tinyxml2/CMakeFiles/tinyxml2.dir/all:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/tinyxml2.dir/build.make tinyxml2/CMakeFiles/tinyxml2.dir/depend
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/tinyxml2.dir/build.make tinyxml2/CMakeFiles/tinyxml2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num=5,6 "Built target tinyxml2"
-.PHONY : tinyxml2/CMakeFiles/tinyxml2.dir/all
+lib/CMakeFiles/tinyxml2.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/tinyxml2.dir/build.make lib/CMakeFiles/tinyxml2.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/tinyxml2.dir/build.make lib/CMakeFiles/tinyxml2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num=8,9 "Built target tinyxml2"
+.PHONY : lib/CMakeFiles/tinyxml2.dir/all
 
 # Build rule for subdir invocation for target.
-tinyxml2/CMakeFiles/tinyxml2.dir/rule: cmake_check_build_system
+lib/CMakeFiles/tinyxml2.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyxml2/CMakeFiles/tinyxml2.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/tinyxml2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tinyxml2/CMakeFiles/tinyxml2.dir/rule
+.PHONY : lib/CMakeFiles/tinyxml2.dir/rule
 
 # Convenience name for target.
-tinyxml2: tinyxml2/CMakeFiles/tinyxml2.dir/rule
+tinyxml2: lib/CMakeFiles/tinyxml2.dir/rule
 
 .PHONY : tinyxml2
 
 # clean rule for target.
-tinyxml2/CMakeFiles/tinyxml2.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/tinyxml2.dir/build.make tinyxml2/CMakeFiles/tinyxml2.dir/clean
-.PHONY : tinyxml2/CMakeFiles/tinyxml2.dir/clean
+lib/CMakeFiles/tinyxml2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/tinyxml2.dir/build.make lib/CMakeFiles/tinyxml2.dir/clean
+.PHONY : lib/CMakeFiles/tinyxml2.dir/clean
 
 #=============================================================================
-# Target rules for target tinyxml2/CMakeFiles/ContinuousMemCheck.dir
+# Target rules for target lib/CMakeFiles/ContinuousMemCheck.dir
 
 # All Build rule for target.
-tinyxml2/CMakeFiles/ContinuousMemCheck.dir/all:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ContinuousMemCheck.dir/build.make tinyxml2/CMakeFiles/ContinuousMemCheck.dir/depend
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ContinuousMemCheck.dir/build.make tinyxml2/CMakeFiles/ContinuousMemCheck.dir/build
+lib/CMakeFiles/ContinuousMemCheck.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ContinuousMemCheck.dir/build.make lib/CMakeFiles/ContinuousMemCheck.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ContinuousMemCheck.dir/build.make lib/CMakeFiles/ContinuousMemCheck.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num= "Built target ContinuousMemCheck"
-.PHONY : tinyxml2/CMakeFiles/ContinuousMemCheck.dir/all
+.PHONY : lib/CMakeFiles/ContinuousMemCheck.dir/all
 
 # Build rule for subdir invocation for target.
-tinyxml2/CMakeFiles/ContinuousMemCheck.dir/rule: cmake_check_build_system
+lib/CMakeFiles/ContinuousMemCheck.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyxml2/CMakeFiles/ContinuousMemCheck.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/ContinuousMemCheck.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tinyxml2/CMakeFiles/ContinuousMemCheck.dir/rule
+.PHONY : lib/CMakeFiles/ContinuousMemCheck.dir/rule
 
 # Convenience name for target.
-ContinuousMemCheck: tinyxml2/CMakeFiles/ContinuousMemCheck.dir/rule
+ContinuousMemCheck: lib/CMakeFiles/ContinuousMemCheck.dir/rule
 
 .PHONY : ContinuousMemCheck
 
 # clean rule for target.
-tinyxml2/CMakeFiles/ContinuousMemCheck.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ContinuousMemCheck.dir/build.make tinyxml2/CMakeFiles/ContinuousMemCheck.dir/clean
-.PHONY : tinyxml2/CMakeFiles/ContinuousMemCheck.dir/clean
+lib/CMakeFiles/ContinuousMemCheck.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ContinuousMemCheck.dir/build.make lib/CMakeFiles/ContinuousMemCheck.dir/clean
+.PHONY : lib/CMakeFiles/ContinuousMemCheck.dir/clean
 
 #=============================================================================
-# Target rules for target tinyxml2/CMakeFiles/NightlyBuild.dir
+# Target rules for target lib/CMakeFiles/NightlyBuild.dir
 
 # All Build rule for target.
-tinyxml2/CMakeFiles/NightlyBuild.dir/all:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlyBuild.dir/build.make tinyxml2/CMakeFiles/NightlyBuild.dir/depend
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlyBuild.dir/build.make tinyxml2/CMakeFiles/NightlyBuild.dir/build
+lib/CMakeFiles/NightlyBuild.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlyBuild.dir/build.make lib/CMakeFiles/NightlyBuild.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlyBuild.dir/build.make lib/CMakeFiles/NightlyBuild.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num= "Built target NightlyBuild"
-.PHONY : tinyxml2/CMakeFiles/NightlyBuild.dir/all
+.PHONY : lib/CMakeFiles/NightlyBuild.dir/all
 
 # Build rule for subdir invocation for target.
-tinyxml2/CMakeFiles/NightlyBuild.dir/rule: cmake_check_build_system
+lib/CMakeFiles/NightlyBuild.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyxml2/CMakeFiles/NightlyBuild.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/NightlyBuild.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tinyxml2/CMakeFiles/NightlyBuild.dir/rule
+.PHONY : lib/CMakeFiles/NightlyBuild.dir/rule
 
 # Convenience name for target.
-NightlyBuild: tinyxml2/CMakeFiles/NightlyBuild.dir/rule
+NightlyBuild: lib/CMakeFiles/NightlyBuild.dir/rule
 
 .PHONY : NightlyBuild
 
 # clean rule for target.
-tinyxml2/CMakeFiles/NightlyBuild.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlyBuild.dir/build.make tinyxml2/CMakeFiles/NightlyBuild.dir/clean
-.PHONY : tinyxml2/CMakeFiles/NightlyBuild.dir/clean
+lib/CMakeFiles/NightlyBuild.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlyBuild.dir/build.make lib/CMakeFiles/NightlyBuild.dir/clean
+.PHONY : lib/CMakeFiles/NightlyBuild.dir/clean
 
 #=============================================================================
-# Target rules for target tinyxml2/CMakeFiles/NightlyConfigure.dir
+# Target rules for target lib/CMakeFiles/NightlyConfigure.dir
 
 # All Build rule for target.
-tinyxml2/CMakeFiles/NightlyConfigure.dir/all:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlyConfigure.dir/build.make tinyxml2/CMakeFiles/NightlyConfigure.dir/depend
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlyConfigure.dir/build.make tinyxml2/CMakeFiles/NightlyConfigure.dir/build
+lib/CMakeFiles/NightlyConfigure.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlyConfigure.dir/build.make lib/CMakeFiles/NightlyConfigure.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlyConfigure.dir/build.make lib/CMakeFiles/NightlyConfigure.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num= "Built target NightlyConfigure"
-.PHONY : tinyxml2/CMakeFiles/NightlyConfigure.dir/all
+.PHONY : lib/CMakeFiles/NightlyConfigure.dir/all
 
 # Build rule for subdir invocation for target.
-tinyxml2/CMakeFiles/NightlyConfigure.dir/rule: cmake_check_build_system
+lib/CMakeFiles/NightlyConfigure.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyxml2/CMakeFiles/NightlyConfigure.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/NightlyConfigure.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tinyxml2/CMakeFiles/NightlyConfigure.dir/rule
+.PHONY : lib/CMakeFiles/NightlyConfigure.dir/rule
 
 # Convenience name for target.
-NightlyConfigure: tinyxml2/CMakeFiles/NightlyConfigure.dir/rule
+NightlyConfigure: lib/CMakeFiles/NightlyConfigure.dir/rule
 
 .PHONY : NightlyConfigure
 
 # clean rule for target.
-tinyxml2/CMakeFiles/NightlyConfigure.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlyConfigure.dir/build.make tinyxml2/CMakeFiles/NightlyConfigure.dir/clean
-.PHONY : tinyxml2/CMakeFiles/NightlyConfigure.dir/clean
+lib/CMakeFiles/NightlyConfigure.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlyConfigure.dir/build.make lib/CMakeFiles/NightlyConfigure.dir/clean
+.PHONY : lib/CMakeFiles/NightlyConfigure.dir/clean
 
 #=============================================================================
-# Target rules for target tinyxml2/CMakeFiles/NightlyUpdate.dir
+# Target rules for target lib/CMakeFiles/NightlyUpdate.dir
 
 # All Build rule for target.
-tinyxml2/CMakeFiles/NightlyUpdate.dir/all:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlyUpdate.dir/build.make tinyxml2/CMakeFiles/NightlyUpdate.dir/depend
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlyUpdate.dir/build.make tinyxml2/CMakeFiles/NightlyUpdate.dir/build
+lib/CMakeFiles/NightlyUpdate.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlyUpdate.dir/build.make lib/CMakeFiles/NightlyUpdate.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlyUpdate.dir/build.make lib/CMakeFiles/NightlyUpdate.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num= "Built target NightlyUpdate"
-.PHONY : tinyxml2/CMakeFiles/NightlyUpdate.dir/all
+.PHONY : lib/CMakeFiles/NightlyUpdate.dir/all
 
 # Build rule for subdir invocation for target.
-tinyxml2/CMakeFiles/NightlyUpdate.dir/rule: cmake_check_build_system
+lib/CMakeFiles/NightlyUpdate.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyxml2/CMakeFiles/NightlyUpdate.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/NightlyUpdate.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tinyxml2/CMakeFiles/NightlyUpdate.dir/rule
+.PHONY : lib/CMakeFiles/NightlyUpdate.dir/rule
 
 # Convenience name for target.
-NightlyUpdate: tinyxml2/CMakeFiles/NightlyUpdate.dir/rule
+NightlyUpdate: lib/CMakeFiles/NightlyUpdate.dir/rule
 
 .PHONY : NightlyUpdate
 
 # clean rule for target.
-tinyxml2/CMakeFiles/NightlyUpdate.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlyUpdate.dir/build.make tinyxml2/CMakeFiles/NightlyUpdate.dir/clean
-.PHONY : tinyxml2/CMakeFiles/NightlyUpdate.dir/clean
+lib/CMakeFiles/NightlyUpdate.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlyUpdate.dir/build.make lib/CMakeFiles/NightlyUpdate.dir/clean
+.PHONY : lib/CMakeFiles/NightlyUpdate.dir/clean
 
 #=============================================================================
-# Target rules for target tinyxml2/CMakeFiles/NightlyMemoryCheck.dir
+# Target rules for target lib/CMakeFiles/NightlyMemoryCheck.dir
 
 # All Build rule for target.
-tinyxml2/CMakeFiles/NightlyMemoryCheck.dir/all:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlyMemoryCheck.dir/build.make tinyxml2/CMakeFiles/NightlyMemoryCheck.dir/depend
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlyMemoryCheck.dir/build.make tinyxml2/CMakeFiles/NightlyMemoryCheck.dir/build
+lib/CMakeFiles/NightlyMemoryCheck.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlyMemoryCheck.dir/build.make lib/CMakeFiles/NightlyMemoryCheck.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlyMemoryCheck.dir/build.make lib/CMakeFiles/NightlyMemoryCheck.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num= "Built target NightlyMemoryCheck"
-.PHONY : tinyxml2/CMakeFiles/NightlyMemoryCheck.dir/all
+.PHONY : lib/CMakeFiles/NightlyMemoryCheck.dir/all
 
 # Build rule for subdir invocation for target.
-tinyxml2/CMakeFiles/NightlyMemoryCheck.dir/rule: cmake_check_build_system
+lib/CMakeFiles/NightlyMemoryCheck.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyxml2/CMakeFiles/NightlyMemoryCheck.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/NightlyMemoryCheck.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tinyxml2/CMakeFiles/NightlyMemoryCheck.dir/rule
+.PHONY : lib/CMakeFiles/NightlyMemoryCheck.dir/rule
 
 # Convenience name for target.
-NightlyMemoryCheck: tinyxml2/CMakeFiles/NightlyMemoryCheck.dir/rule
+NightlyMemoryCheck: lib/CMakeFiles/NightlyMemoryCheck.dir/rule
 
 .PHONY : NightlyMemoryCheck
 
 # clean rule for target.
-tinyxml2/CMakeFiles/NightlyMemoryCheck.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlyMemoryCheck.dir/build.make tinyxml2/CMakeFiles/NightlyMemoryCheck.dir/clean
-.PHONY : tinyxml2/CMakeFiles/NightlyMemoryCheck.dir/clean
+lib/CMakeFiles/NightlyMemoryCheck.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlyMemoryCheck.dir/build.make lib/CMakeFiles/NightlyMemoryCheck.dir/clean
+.PHONY : lib/CMakeFiles/NightlyMemoryCheck.dir/clean
 
 #=============================================================================
-# Target rules for target tinyxml2/CMakeFiles/ContinuousConfigure.dir
+# Target rules for target lib/CMakeFiles/ContinuousConfigure.dir
 
 # All Build rule for target.
-tinyxml2/CMakeFiles/ContinuousConfigure.dir/all:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ContinuousConfigure.dir/build.make tinyxml2/CMakeFiles/ContinuousConfigure.dir/depend
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ContinuousConfigure.dir/build.make tinyxml2/CMakeFiles/ContinuousConfigure.dir/build
+lib/CMakeFiles/ContinuousConfigure.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ContinuousConfigure.dir/build.make lib/CMakeFiles/ContinuousConfigure.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ContinuousConfigure.dir/build.make lib/CMakeFiles/ContinuousConfigure.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num= "Built target ContinuousConfigure"
-.PHONY : tinyxml2/CMakeFiles/ContinuousConfigure.dir/all
+.PHONY : lib/CMakeFiles/ContinuousConfigure.dir/all
 
 # Build rule for subdir invocation for target.
-tinyxml2/CMakeFiles/ContinuousConfigure.dir/rule: cmake_check_build_system
+lib/CMakeFiles/ContinuousConfigure.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyxml2/CMakeFiles/ContinuousConfigure.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/ContinuousConfigure.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tinyxml2/CMakeFiles/ContinuousConfigure.dir/rule
+.PHONY : lib/CMakeFiles/ContinuousConfigure.dir/rule
 
 # Convenience name for target.
-ContinuousConfigure: tinyxml2/CMakeFiles/ContinuousConfigure.dir/rule
+ContinuousConfigure: lib/CMakeFiles/ContinuousConfigure.dir/rule
 
 .PHONY : ContinuousConfigure
 
 # clean rule for target.
-tinyxml2/CMakeFiles/ContinuousConfigure.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ContinuousConfigure.dir/build.make tinyxml2/CMakeFiles/ContinuousConfigure.dir/clean
-.PHONY : tinyxml2/CMakeFiles/ContinuousConfigure.dir/clean
+lib/CMakeFiles/ContinuousConfigure.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ContinuousConfigure.dir/build.make lib/CMakeFiles/ContinuousConfigure.dir/clean
+.PHONY : lib/CMakeFiles/ContinuousConfigure.dir/clean
 
 #=============================================================================
-# Target rules for target tinyxml2/CMakeFiles/Nightly.dir
+# Target rules for target lib/CMakeFiles/Nightly.dir
 
 # All Build rule for target.
-tinyxml2/CMakeFiles/Nightly.dir/all:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/Nightly.dir/build.make tinyxml2/CMakeFiles/Nightly.dir/depend
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/Nightly.dir/build.make tinyxml2/CMakeFiles/Nightly.dir/build
+lib/CMakeFiles/Nightly.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/Nightly.dir/build.make lib/CMakeFiles/Nightly.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/Nightly.dir/build.make lib/CMakeFiles/Nightly.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num= "Built target Nightly"
-.PHONY : tinyxml2/CMakeFiles/Nightly.dir/all
+.PHONY : lib/CMakeFiles/Nightly.dir/all
 
 # Build rule for subdir invocation for target.
-tinyxml2/CMakeFiles/Nightly.dir/rule: cmake_check_build_system
+lib/CMakeFiles/Nightly.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyxml2/CMakeFiles/Nightly.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/Nightly.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tinyxml2/CMakeFiles/Nightly.dir/rule
+.PHONY : lib/CMakeFiles/Nightly.dir/rule
 
 # Convenience name for target.
-Nightly: tinyxml2/CMakeFiles/Nightly.dir/rule
+Nightly: lib/CMakeFiles/Nightly.dir/rule
 
 .PHONY : Nightly
 
 # clean rule for target.
-tinyxml2/CMakeFiles/Nightly.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/Nightly.dir/build.make tinyxml2/CMakeFiles/Nightly.dir/clean
-.PHONY : tinyxml2/CMakeFiles/Nightly.dir/clean
+lib/CMakeFiles/Nightly.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/Nightly.dir/build.make lib/CMakeFiles/Nightly.dir/clean
+.PHONY : lib/CMakeFiles/Nightly.dir/clean
 
 #=============================================================================
-# Target rules for target tinyxml2/CMakeFiles/NightlyStart.dir
+# Target rules for target lib/CMakeFiles/NightlyStart.dir
 
 # All Build rule for target.
-tinyxml2/CMakeFiles/NightlyStart.dir/all:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlyStart.dir/build.make tinyxml2/CMakeFiles/NightlyStart.dir/depend
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlyStart.dir/build.make tinyxml2/CMakeFiles/NightlyStart.dir/build
+lib/CMakeFiles/NightlyStart.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlyStart.dir/build.make lib/CMakeFiles/NightlyStart.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlyStart.dir/build.make lib/CMakeFiles/NightlyStart.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num= "Built target NightlyStart"
-.PHONY : tinyxml2/CMakeFiles/NightlyStart.dir/all
+.PHONY : lib/CMakeFiles/NightlyStart.dir/all
 
 # Build rule for subdir invocation for target.
-tinyxml2/CMakeFiles/NightlyStart.dir/rule: cmake_check_build_system
+lib/CMakeFiles/NightlyStart.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyxml2/CMakeFiles/NightlyStart.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/NightlyStart.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tinyxml2/CMakeFiles/NightlyStart.dir/rule
+.PHONY : lib/CMakeFiles/NightlyStart.dir/rule
 
 # Convenience name for target.
-NightlyStart: tinyxml2/CMakeFiles/NightlyStart.dir/rule
+NightlyStart: lib/CMakeFiles/NightlyStart.dir/rule
 
 .PHONY : NightlyStart
 
 # clean rule for target.
-tinyxml2/CMakeFiles/NightlyStart.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlyStart.dir/build.make tinyxml2/CMakeFiles/NightlyStart.dir/clean
-.PHONY : tinyxml2/CMakeFiles/NightlyStart.dir/clean
+lib/CMakeFiles/NightlyStart.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlyStart.dir/build.make lib/CMakeFiles/NightlyStart.dir/clean
+.PHONY : lib/CMakeFiles/NightlyStart.dir/clean
 
 #=============================================================================
-# Target rules for target tinyxml2/CMakeFiles/ExperimentalMemCheck.dir
+# Target rules for target lib/CMakeFiles/ExperimentalMemCheck.dir
 
 # All Build rule for target.
-tinyxml2/CMakeFiles/ExperimentalMemCheck.dir/all:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ExperimentalMemCheck.dir/build.make tinyxml2/CMakeFiles/ExperimentalMemCheck.dir/depend
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ExperimentalMemCheck.dir/build.make tinyxml2/CMakeFiles/ExperimentalMemCheck.dir/build
+lib/CMakeFiles/ExperimentalMemCheck.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ExperimentalMemCheck.dir/build.make lib/CMakeFiles/ExperimentalMemCheck.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ExperimentalMemCheck.dir/build.make lib/CMakeFiles/ExperimentalMemCheck.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num= "Built target ExperimentalMemCheck"
-.PHONY : tinyxml2/CMakeFiles/ExperimentalMemCheck.dir/all
+.PHONY : lib/CMakeFiles/ExperimentalMemCheck.dir/all
 
 # Build rule for subdir invocation for target.
-tinyxml2/CMakeFiles/ExperimentalMemCheck.dir/rule: cmake_check_build_system
+lib/CMakeFiles/ExperimentalMemCheck.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyxml2/CMakeFiles/ExperimentalMemCheck.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/ExperimentalMemCheck.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tinyxml2/CMakeFiles/ExperimentalMemCheck.dir/rule
+.PHONY : lib/CMakeFiles/ExperimentalMemCheck.dir/rule
 
 # Convenience name for target.
-ExperimentalMemCheck: tinyxml2/CMakeFiles/ExperimentalMemCheck.dir/rule
+ExperimentalMemCheck: lib/CMakeFiles/ExperimentalMemCheck.dir/rule
 
 .PHONY : ExperimentalMemCheck
 
 # clean rule for target.
-tinyxml2/CMakeFiles/ExperimentalMemCheck.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ExperimentalMemCheck.dir/build.make tinyxml2/CMakeFiles/ExperimentalMemCheck.dir/clean
-.PHONY : tinyxml2/CMakeFiles/ExperimentalMemCheck.dir/clean
+lib/CMakeFiles/ExperimentalMemCheck.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ExperimentalMemCheck.dir/build.make lib/CMakeFiles/ExperimentalMemCheck.dir/clean
+.PHONY : lib/CMakeFiles/ExperimentalMemCheck.dir/clean
 
 #=============================================================================
-# Target rules for target tinyxml2/CMakeFiles/Continuous.dir
+# Target rules for target lib/CMakeFiles/Continuous.dir
 
 # All Build rule for target.
-tinyxml2/CMakeFiles/Continuous.dir/all:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/Continuous.dir/build.make tinyxml2/CMakeFiles/Continuous.dir/depend
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/Continuous.dir/build.make tinyxml2/CMakeFiles/Continuous.dir/build
+lib/CMakeFiles/Continuous.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/Continuous.dir/build.make lib/CMakeFiles/Continuous.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/Continuous.dir/build.make lib/CMakeFiles/Continuous.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num= "Built target Continuous"
-.PHONY : tinyxml2/CMakeFiles/Continuous.dir/all
+.PHONY : lib/CMakeFiles/Continuous.dir/all
 
 # Build rule for subdir invocation for target.
-tinyxml2/CMakeFiles/Continuous.dir/rule: cmake_check_build_system
+lib/CMakeFiles/Continuous.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyxml2/CMakeFiles/Continuous.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/Continuous.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tinyxml2/CMakeFiles/Continuous.dir/rule
+.PHONY : lib/CMakeFiles/Continuous.dir/rule
 
 # Convenience name for target.
-Continuous: tinyxml2/CMakeFiles/Continuous.dir/rule
+Continuous: lib/CMakeFiles/Continuous.dir/rule
 
 .PHONY : Continuous
 
 # clean rule for target.
-tinyxml2/CMakeFiles/Continuous.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/Continuous.dir/build.make tinyxml2/CMakeFiles/Continuous.dir/clean
-.PHONY : tinyxml2/CMakeFiles/Continuous.dir/clean
+lib/CMakeFiles/Continuous.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/Continuous.dir/build.make lib/CMakeFiles/Continuous.dir/clean
+.PHONY : lib/CMakeFiles/Continuous.dir/clean
 
 #=============================================================================
-# Target rules for target tinyxml2/CMakeFiles/Experimental.dir
+# Target rules for target lib/CMakeFiles/Experimental.dir
 
 # All Build rule for target.
-tinyxml2/CMakeFiles/Experimental.dir/all:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/Experimental.dir/build.make tinyxml2/CMakeFiles/Experimental.dir/depend
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/Experimental.dir/build.make tinyxml2/CMakeFiles/Experimental.dir/build
+lib/CMakeFiles/Experimental.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/Experimental.dir/build.make lib/CMakeFiles/Experimental.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/Experimental.dir/build.make lib/CMakeFiles/Experimental.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num= "Built target Experimental"
-.PHONY : tinyxml2/CMakeFiles/Experimental.dir/all
+.PHONY : lib/CMakeFiles/Experimental.dir/all
 
 # Build rule for subdir invocation for target.
-tinyxml2/CMakeFiles/Experimental.dir/rule: cmake_check_build_system
+lib/CMakeFiles/Experimental.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tinyxml2/CMakeFiles/Experimental.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/Experimental.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tinyxml2/CMakeFiles/Experimental.dir/rule
+.PHONY : lib/CMakeFiles/Experimental.dir/rule
 
 # Convenience name for target.
-Experimental: tinyxml2/CMakeFiles/Experimental.dir/rule
+Experimental: lib/CMakeFiles/Experimental.dir/rule
 
 .PHONY : Experimental
 
 # clean rule for target.
-tinyxml2/CMakeFiles/Experimental.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/Experimental.dir/build.make tinyxml2/CMakeFiles/Experimental.dir/clean
-.PHONY : tinyxml2/CMakeFiles/Experimental.dir/clean
+lib/CMakeFiles/Experimental.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/Experimental.dir/build.make lib/CMakeFiles/Experimental.dir/clean
+.PHONY : lib/CMakeFiles/Experimental.dir/clean
+
+#=============================================================================
+# Target rules for target src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir
+
+# All Build rule for target.
+src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/build.make src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/build.make src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num=3,4 "Built target libitcserverframe.a"
+.PHONY : src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/all
+
+# Build rule for subdir invocation for target.
+src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
+.PHONY : src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/rule
+
+# Convenience name for target.
+libitcserverframe.a: src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/rule
+
+.PHONY : libitcserverframe.a
+
+# clean rule for target.
+src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/build.make src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/clean
+.PHONY : src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/clean
+
+#=============================================================================
+# Target rules for target tests/testapp/CMakeFiles/testapp.dir
+
+# All Build rule for target.
+tests/testapp/CMakeFiles/testapp.dir/all: src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/all
+	$(MAKE) $(MAKESILENT) -f tests/testapp/CMakeFiles/testapp.dir/build.make tests/testapp/CMakeFiles/testapp.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/testapp/CMakeFiles/testapp.dir/build.make tests/testapp/CMakeFiles/testapp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num=5,6,7 "Built target testapp"
+.PHONY : tests/testapp/CMakeFiles/testapp.dir/all
+
+# Build rule for subdir invocation for target.
+tests/testapp/CMakeFiles/testapp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/testapp/CMakeFiles/testapp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
+.PHONY : tests/testapp/CMakeFiles/testapp.dir/rule
+
+# Convenience name for target.
+testapp: tests/testapp/CMakeFiles/testapp.dir/rule
+
+.PHONY : testapp
+
+# clean rule for target.
+tests/testapp/CMakeFiles/testapp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/testapp/CMakeFiles/testapp.dir/build.make tests/testapp/CMakeFiles/testapp.dir/clean
+.PHONY : tests/testapp/CMakeFiles/testapp.dir/clean
+
+#=============================================================================
+# Target rules for target tests/gmptest/CMakeFiles/gmptest.dir
+
+# All Build rule for target.
+tests/gmptest/CMakeFiles/gmptest.dir/all:
+	$(MAKE) $(MAKESILENT) -f tests/gmptest/CMakeFiles/gmptest.dir/build.make tests/gmptest/CMakeFiles/gmptest.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/gmptest/CMakeFiles/gmptest.dir/build.make tests/gmptest/CMakeFiles/gmptest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num=1,2 "Built target gmptest"
+.PHONY : tests/gmptest/CMakeFiles/gmptest.dir/all
+
+# Build rule for subdir invocation for target.
+tests/gmptest/CMakeFiles/gmptest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/gmptest/CMakeFiles/gmptest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
+.PHONY : tests/gmptest/CMakeFiles/gmptest.dir/rule
+
+# Convenience name for target.
+gmptest: tests/gmptest/CMakeFiles/gmptest.dir/rule
+
+.PHONY : gmptest
+
+# clean rule for target.
+tests/gmptest/CMakeFiles/gmptest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/gmptest/CMakeFiles/gmptest.dir/build.make tests/gmptest/CMakeFiles/gmptest.dir/clean
+.PHONY : tests/gmptest/CMakeFiles/gmptest.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

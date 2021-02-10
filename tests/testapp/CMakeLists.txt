@@ -1,0 +1,15 @@
+#test_PROGRAM=testapp
+#testapp_LIBS=libitcserverframe.a
+set(test_PROGRAM testapp)
+set(testapp_LIBS libitcserverframe.a)
+set(testapp_INCLUDE ${PROJECT_SOURCE_DIR}/include)
+include_directories(include ${testapp_INCLUDE})
+aux_source_directory(src SRCS)
+add_executable(${test_PROGRAM} ${SRCS})
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/output)
+target_link_libraries(${test_PROGRAM} ${testapp_LIBS})
+find_package(wxWidgets COMPONENTS net gl core base)
+if(wxWidgets_FOUND)
+	include(${wxWidgets_USE_FILE})
+	target_link_libraries(${test_PROGRAM} ${wxWidgets_LIBRARIES})
+endif(wxWidgets_FOUND)

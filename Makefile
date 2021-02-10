@@ -176,19 +176,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named testapp
-
-# Build rule for target.
-testapp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testapp
-.PHONY : testapp
-
-# fast build rule for target.
-testapp/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/testapp.dir/build.make tests/CMakeFiles/testapp.dir/build
-.PHONY : testapp/fast
-
-#=============================================================================
 # Target rules for targets named ContinuousCoverage
 
 # Build rule for target.
@@ -198,7 +185,7 @@ ContinuousCoverage: cmake_check_build_system
 
 # fast build rule for target.
 ContinuousCoverage/fast:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ContinuousCoverage.dir/build.make tinyxml2/CMakeFiles/ContinuousCoverage.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ContinuousCoverage.dir/build.make lib/CMakeFiles/ContinuousCoverage.dir/build
 .PHONY : ContinuousCoverage/fast
 
 #=============================================================================
@@ -211,7 +198,7 @@ ContinuousTest: cmake_check_build_system
 
 # fast build rule for target.
 ContinuousTest/fast:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ContinuousTest.dir/build.make tinyxml2/CMakeFiles/ContinuousTest.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ContinuousTest.dir/build.make lib/CMakeFiles/ContinuousTest.dir/build
 .PHONY : ContinuousTest/fast
 
 #=============================================================================
@@ -224,7 +211,7 @@ ContinuousBuild: cmake_check_build_system
 
 # fast build rule for target.
 ContinuousBuild/fast:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ContinuousBuild.dir/build.make tinyxml2/CMakeFiles/ContinuousBuild.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ContinuousBuild.dir/build.make lib/CMakeFiles/ContinuousBuild.dir/build
 .PHONY : ContinuousBuild/fast
 
 #=============================================================================
@@ -237,7 +224,7 @@ ContinuousStart: cmake_check_build_system
 
 # fast build rule for target.
 ContinuousStart/fast:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ContinuousStart.dir/build.make tinyxml2/CMakeFiles/ContinuousStart.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ContinuousStart.dir/build.make lib/CMakeFiles/ContinuousStart.dir/build
 .PHONY : ContinuousStart/fast
 
 #=============================================================================
@@ -250,7 +237,7 @@ ExperimentalBuild: cmake_check_build_system
 
 # fast build rule for target.
 ExperimentalBuild/fast:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ExperimentalBuild.dir/build.make tinyxml2/CMakeFiles/ExperimentalBuild.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ExperimentalBuild.dir/build.make lib/CMakeFiles/ExperimentalBuild.dir/build
 .PHONY : ExperimentalBuild/fast
 
 #=============================================================================
@@ -263,7 +250,7 @@ ExperimentalCoverage: cmake_check_build_system
 
 # fast build rule for target.
 ExperimentalCoverage/fast:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ExperimentalCoverage.dir/build.make tinyxml2/CMakeFiles/ExperimentalCoverage.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ExperimentalCoverage.dir/build.make lib/CMakeFiles/ExperimentalCoverage.dir/build
 .PHONY : ExperimentalCoverage/fast
 
 #=============================================================================
@@ -276,7 +263,7 @@ ExperimentalSubmit: cmake_check_build_system
 
 # fast build rule for target.
 ExperimentalSubmit/fast:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ExperimentalSubmit.dir/build.make tinyxml2/CMakeFiles/ExperimentalSubmit.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ExperimentalSubmit.dir/build.make lib/CMakeFiles/ExperimentalSubmit.dir/build
 .PHONY : ExperimentalSubmit/fast
 
 #=============================================================================
@@ -289,7 +276,7 @@ ContinuousUpdate: cmake_check_build_system
 
 # fast build rule for target.
 ContinuousUpdate/fast:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ContinuousUpdate.dir/build.make tinyxml2/CMakeFiles/ContinuousUpdate.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ContinuousUpdate.dir/build.make lib/CMakeFiles/ContinuousUpdate.dir/build
 .PHONY : ContinuousUpdate/fast
 
 #=============================================================================
@@ -302,7 +289,7 @@ xmltest: cmake_check_build_system
 
 # fast build rule for target.
 xmltest/fast:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/xmltest.dir/build.make tinyxml2/CMakeFiles/xmltest.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/xmltest.dir/build.make lib/CMakeFiles/xmltest.dir/build
 .PHONY : xmltest/fast
 
 #=============================================================================
@@ -315,7 +302,7 @@ ExperimentalUpdate: cmake_check_build_system
 
 # fast build rule for target.
 ExperimentalUpdate/fast:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ExperimentalUpdate.dir/build.make tinyxml2/CMakeFiles/ExperimentalUpdate.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ExperimentalUpdate.dir/build.make lib/CMakeFiles/ExperimentalUpdate.dir/build
 .PHONY : ExperimentalUpdate/fast
 
 #=============================================================================
@@ -328,7 +315,7 @@ ExperimentalStart: cmake_check_build_system
 
 # fast build rule for target.
 ExperimentalStart/fast:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ExperimentalStart.dir/build.make tinyxml2/CMakeFiles/ExperimentalStart.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ExperimentalStart.dir/build.make lib/CMakeFiles/ExperimentalStart.dir/build
 .PHONY : ExperimentalStart/fast
 
 #=============================================================================
@@ -341,7 +328,7 @@ ContinuousSubmit: cmake_check_build_system
 
 # fast build rule for target.
 ContinuousSubmit/fast:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ContinuousSubmit.dir/build.make tinyxml2/CMakeFiles/ContinuousSubmit.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ContinuousSubmit.dir/build.make lib/CMakeFiles/ContinuousSubmit.dir/build
 .PHONY : ContinuousSubmit/fast
 
 #=============================================================================
@@ -354,7 +341,7 @@ ExperimentalTest: cmake_check_build_system
 
 # fast build rule for target.
 ExperimentalTest/fast:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ExperimentalTest.dir/build.make tinyxml2/CMakeFiles/ExperimentalTest.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ExperimentalTest.dir/build.make lib/CMakeFiles/ExperimentalTest.dir/build
 .PHONY : ExperimentalTest/fast
 
 #=============================================================================
@@ -367,7 +354,7 @@ NightlySubmit: cmake_check_build_system
 
 # fast build rule for target.
 NightlySubmit/fast:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlySubmit.dir/build.make tinyxml2/CMakeFiles/NightlySubmit.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlySubmit.dir/build.make lib/CMakeFiles/NightlySubmit.dir/build
 .PHONY : NightlySubmit/fast
 
 #=============================================================================
@@ -380,7 +367,7 @@ NightlyMemCheck: cmake_check_build_system
 
 # fast build rule for target.
 NightlyMemCheck/fast:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlyMemCheck.dir/build.make tinyxml2/CMakeFiles/NightlyMemCheck.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlyMemCheck.dir/build.make lib/CMakeFiles/NightlyMemCheck.dir/build
 .PHONY : NightlyMemCheck/fast
 
 #=============================================================================
@@ -393,7 +380,7 @@ ExperimentalConfigure: cmake_check_build_system
 
 # fast build rule for target.
 ExperimentalConfigure/fast:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ExperimentalConfigure.dir/build.make tinyxml2/CMakeFiles/ExperimentalConfigure.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ExperimentalConfigure.dir/build.make lib/CMakeFiles/ExperimentalConfigure.dir/build
 .PHONY : ExperimentalConfigure/fast
 
 #=============================================================================
@@ -406,7 +393,7 @@ NightlyCoverage: cmake_check_build_system
 
 # fast build rule for target.
 NightlyCoverage/fast:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlyCoverage.dir/build.make tinyxml2/CMakeFiles/NightlyCoverage.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlyCoverage.dir/build.make lib/CMakeFiles/NightlyCoverage.dir/build
 .PHONY : NightlyCoverage/fast
 
 #=============================================================================
@@ -419,7 +406,7 @@ NightlyTest: cmake_check_build_system
 
 # fast build rule for target.
 NightlyTest/fast:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlyTest.dir/build.make tinyxml2/CMakeFiles/NightlyTest.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlyTest.dir/build.make lib/CMakeFiles/NightlyTest.dir/build
 .PHONY : NightlyTest/fast
 
 #=============================================================================
@@ -432,7 +419,7 @@ uninstall: cmake_check_build_system
 
 # fast build rule for target.
 uninstall/fast:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/uninstall.dir/build.make tinyxml2/CMakeFiles/uninstall.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/uninstall.dir/build.make lib/CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
 #=============================================================================
@@ -445,7 +432,7 @@ tinyxml2: cmake_check_build_system
 
 # fast build rule for target.
 tinyxml2/fast:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/tinyxml2.dir/build.make tinyxml2/CMakeFiles/tinyxml2.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/tinyxml2.dir/build.make lib/CMakeFiles/tinyxml2.dir/build
 .PHONY : tinyxml2/fast
 
 #=============================================================================
@@ -458,7 +445,7 @@ ContinuousMemCheck: cmake_check_build_system
 
 # fast build rule for target.
 ContinuousMemCheck/fast:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ContinuousMemCheck.dir/build.make tinyxml2/CMakeFiles/ContinuousMemCheck.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ContinuousMemCheck.dir/build.make lib/CMakeFiles/ContinuousMemCheck.dir/build
 .PHONY : ContinuousMemCheck/fast
 
 #=============================================================================
@@ -471,7 +458,7 @@ NightlyBuild: cmake_check_build_system
 
 # fast build rule for target.
 NightlyBuild/fast:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlyBuild.dir/build.make tinyxml2/CMakeFiles/NightlyBuild.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlyBuild.dir/build.make lib/CMakeFiles/NightlyBuild.dir/build
 .PHONY : NightlyBuild/fast
 
 #=============================================================================
@@ -484,7 +471,7 @@ NightlyConfigure: cmake_check_build_system
 
 # fast build rule for target.
 NightlyConfigure/fast:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlyConfigure.dir/build.make tinyxml2/CMakeFiles/NightlyConfigure.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlyConfigure.dir/build.make lib/CMakeFiles/NightlyConfigure.dir/build
 .PHONY : NightlyConfigure/fast
 
 #=============================================================================
@@ -497,7 +484,7 @@ NightlyUpdate: cmake_check_build_system
 
 # fast build rule for target.
 NightlyUpdate/fast:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlyUpdate.dir/build.make tinyxml2/CMakeFiles/NightlyUpdate.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlyUpdate.dir/build.make lib/CMakeFiles/NightlyUpdate.dir/build
 .PHONY : NightlyUpdate/fast
 
 #=============================================================================
@@ -510,7 +497,7 @@ NightlyMemoryCheck: cmake_check_build_system
 
 # fast build rule for target.
 NightlyMemoryCheck/fast:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlyMemoryCheck.dir/build.make tinyxml2/CMakeFiles/NightlyMemoryCheck.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlyMemoryCheck.dir/build.make lib/CMakeFiles/NightlyMemoryCheck.dir/build
 .PHONY : NightlyMemoryCheck/fast
 
 #=============================================================================
@@ -523,7 +510,7 @@ ContinuousConfigure: cmake_check_build_system
 
 # fast build rule for target.
 ContinuousConfigure/fast:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ContinuousConfigure.dir/build.make tinyxml2/CMakeFiles/ContinuousConfigure.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ContinuousConfigure.dir/build.make lib/CMakeFiles/ContinuousConfigure.dir/build
 .PHONY : ContinuousConfigure/fast
 
 #=============================================================================
@@ -536,7 +523,7 @@ Nightly: cmake_check_build_system
 
 # fast build rule for target.
 Nightly/fast:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/Nightly.dir/build.make tinyxml2/CMakeFiles/Nightly.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/Nightly.dir/build.make lib/CMakeFiles/Nightly.dir/build
 .PHONY : Nightly/fast
 
 #=============================================================================
@@ -549,7 +536,7 @@ NightlyStart: cmake_check_build_system
 
 # fast build rule for target.
 NightlyStart/fast:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/NightlyStart.dir/build.make tinyxml2/CMakeFiles/NightlyStart.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/NightlyStart.dir/build.make lib/CMakeFiles/NightlyStart.dir/build
 .PHONY : NightlyStart/fast
 
 #=============================================================================
@@ -562,7 +549,7 @@ ExperimentalMemCheck: cmake_check_build_system
 
 # fast build rule for target.
 ExperimentalMemCheck/fast:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/ExperimentalMemCheck.dir/build.make tinyxml2/CMakeFiles/ExperimentalMemCheck.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/ExperimentalMemCheck.dir/build.make lib/CMakeFiles/ExperimentalMemCheck.dir/build
 .PHONY : ExperimentalMemCheck/fast
 
 #=============================================================================
@@ -575,7 +562,7 @@ Continuous: cmake_check_build_system
 
 # fast build rule for target.
 Continuous/fast:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/Continuous.dir/build.make tinyxml2/CMakeFiles/Continuous.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/Continuous.dir/build.make lib/CMakeFiles/Continuous.dir/build
 .PHONY : Continuous/fast
 
 #=============================================================================
@@ -588,8 +575,47 @@ Experimental: cmake_check_build_system
 
 # fast build rule for target.
 Experimental/fast:
-	$(MAKE) $(MAKESILENT) -f tinyxml2/CMakeFiles/Experimental.dir/build.make tinyxml2/CMakeFiles/Experimental.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/Experimental.dir/build.make lib/CMakeFiles/Experimental.dir/build
 .PHONY : Experimental/fast
+
+#=============================================================================
+# Target rules for targets named libitcserverframe.a
+
+# Build rule for target.
+libitcserverframe.a: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libitcserverframe.a
+.PHONY : libitcserverframe.a
+
+# fast build rule for target.
+libitcserverframe.a/fast:
+	$(MAKE) $(MAKESILENT) -f src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/build.make src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/build
+.PHONY : libitcserverframe.a/fast
+
+#=============================================================================
+# Target rules for targets named testapp
+
+# Build rule for target.
+testapp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testapp
+.PHONY : testapp
+
+# fast build rule for target.
+testapp/fast:
+	$(MAKE) $(MAKESILENT) -f tests/testapp/CMakeFiles/testapp.dir/build.make tests/testapp/CMakeFiles/testapp.dir/build
+.PHONY : testapp/fast
+
+#=============================================================================
+# Target rules for targets named gmptest
+
+# Build rule for target.
+gmptest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmptest
+.PHONY : gmptest
+
+# fast build rule for target.
+gmptest/fast:
+	$(MAKE) $(MAKESILENT) -f tests/gmptest/CMakeFiles/gmptest.dir/build.make tests/gmptest/CMakeFiles/gmptest.dir/build
+.PHONY : gmptest/fast
 
 # Help Target
 help:
@@ -632,6 +658,8 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... uninstall"
+	@echo "... gmptest"
+	@echo "... libitcserverframe.a"
 	@echo "... testapp"
 	@echo "... tinyxml2"
 	@echo "... xmltest"

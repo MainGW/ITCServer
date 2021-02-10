@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -dynamiclib -Wl,-headerpad_max_install_names -compatibility_version 8.0.0 -current_version 8.0.0 -o libtinyxml2.8.0.0.dylib -install_name /Users/wanaoi/home/source.d/C++/ITCServer/lib/libtinyxml2.8.dylib CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o 

@@ -295,6 +295,9 @@ DART_TESTING_TIMEOUT:STRING=1500
 //Path to a program.
 GITCOMMAND:FILEPATH=/usr/bin/git
 
+//path 
+GMP_PREFIX:PATH=
+
 //Path to a program.
 HGCOMMAND:FILEPATH=HGCOMMAND-NOTFOUND
 
@@ -329,7 +332,7 @@ SLURM_SRUN_COMMAND:FILEPATH=SLURM_SRUN_COMMAND-NOTFOUND
 SVNCOMMAND:FILEPATH=SVNCOMMAND-NOTFOUND
 
 //Value Computed by CMake
-tinyxml2_BINARY_DIR:STATIC=/Users/wanaoi/home/source.d/C++/ITCServer/tinyxml2
+tinyxml2_BINARY_DIR:STATIC=/Users/wanaoi/home/source.d/C++/ITCServer/lib
 
 //Value Computed by CMake
 tinyxml2_SOURCE_DIR:STATIC=/Users/wanaoi/home/source.d/C++/ITCServer/tinyxml2
@@ -476,7 +479,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

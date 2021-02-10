@@ -175,102 +175,6 @@ depend:
 	cd /Users/wanaoi/home/source.d/C++/ITCServer && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-tests/CMakeFiles/testapp.dir/rule:
-	cd /Users/wanaoi/home/source.d/C++/ITCServer && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/testapp.dir/rule
-.PHONY : tests/CMakeFiles/testapp.dir/rule
-
-# Convenience name for target.
-testapp: tests/CMakeFiles/testapp.dir/rule
-
-.PHONY : testapp
-
-# fast build rule for target.
-testapp/fast:
-	cd /Users/wanaoi/home/source.d/C++/ITCServer && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/testapp.dir/build.make tests/CMakeFiles/testapp.dir/build
-.PHONY : testapp/fast
-
-__/src/ITCServerFrame/ITCServerFrame.o: __/src/ITCServerFrame/ITCServerFrame.cpp.o
-
-.PHONY : __/src/ITCServerFrame/ITCServerFrame.o
-
-# target to build an object file
-__/src/ITCServerFrame/ITCServerFrame.cpp.o:
-	cd /Users/wanaoi/home/source.d/C++/ITCServer && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/testapp.dir/build.make tests/CMakeFiles/testapp.dir/__/src/ITCServerFrame/ITCServerFrame.cpp.o
-.PHONY : __/src/ITCServerFrame/ITCServerFrame.cpp.o
-
-__/src/ITCServerFrame/ITCServerFrame.i: __/src/ITCServerFrame/ITCServerFrame.cpp.i
-
-.PHONY : __/src/ITCServerFrame/ITCServerFrame.i
-
-# target to preprocess a source file
-__/src/ITCServerFrame/ITCServerFrame.cpp.i:
-	cd /Users/wanaoi/home/source.d/C++/ITCServer && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/testapp.dir/build.make tests/CMakeFiles/testapp.dir/__/src/ITCServerFrame/ITCServerFrame.cpp.i
-.PHONY : __/src/ITCServerFrame/ITCServerFrame.cpp.i
-
-__/src/ITCServerFrame/ITCServerFrame.s: __/src/ITCServerFrame/ITCServerFrame.cpp.s
-
-.PHONY : __/src/ITCServerFrame/ITCServerFrame.s
-
-# target to generate assembly for a file
-__/src/ITCServerFrame/ITCServerFrame.cpp.s:
-	cd /Users/wanaoi/home/source.d/C++/ITCServer && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/testapp.dir/build.make tests/CMakeFiles/testapp.dir/__/src/ITCServerFrame/ITCServerFrame.cpp.s
-.PHONY : __/src/ITCServerFrame/ITCServerFrame.cpp.s
-
-src/TestApp.o: src/TestApp.cpp.o
-
-.PHONY : src/TestApp.o
-
-# target to build an object file
-src/TestApp.cpp.o:
-	cd /Users/wanaoi/home/source.d/C++/ITCServer && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/testapp.dir/build.make tests/CMakeFiles/testapp.dir/src/TestApp.cpp.o
-.PHONY : src/TestApp.cpp.o
-
-src/TestApp.i: src/TestApp.cpp.i
-
-.PHONY : src/TestApp.i
-
-# target to preprocess a source file
-src/TestApp.cpp.i:
-	cd /Users/wanaoi/home/source.d/C++/ITCServer && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/testapp.dir/build.make tests/CMakeFiles/testapp.dir/src/TestApp.cpp.i
-.PHONY : src/TestApp.cpp.i
-
-src/TestApp.s: src/TestApp.cpp.s
-
-.PHONY : src/TestApp.s
-
-# target to generate assembly for a file
-src/TestApp.cpp.s:
-	cd /Users/wanaoi/home/source.d/C++/ITCServer && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/testapp.dir/build.make tests/CMakeFiles/testapp.dir/src/TestApp.cpp.s
-.PHONY : src/TestApp.cpp.s
-
-src/main.o: src/main.cpp.o
-
-.PHONY : src/main.o
-
-# target to build an object file
-src/main.cpp.o:
-	cd /Users/wanaoi/home/source.d/C++/ITCServer && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/testapp.dir/build.make tests/CMakeFiles/testapp.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
-
-src/main.i: src/main.cpp.i
-
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.cpp.i:
-	cd /Users/wanaoi/home/source.d/C++/ITCServer && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/testapp.dir/build.make tests/CMakeFiles/testapp.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
-
-src/main.s: src/main.cpp.s
-
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.cpp.s:
-	cd /Users/wanaoi/home/source.d/C++/ITCServer && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/testapp.dir/build.make tests/CMakeFiles/testapp.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -283,16 +187,6 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... testapp"
-	@echo "... __/src/ITCServerFrame/ITCServerFrame.o"
-	@echo "... __/src/ITCServerFrame/ITCServerFrame.i"
-	@echo "... __/src/ITCServerFrame/ITCServerFrame.s"
-	@echo "... src/TestApp.o"
-	@echo "... src/TestApp.i"
-	@echo "... src/TestApp.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
 .PHONY : help
 
 
