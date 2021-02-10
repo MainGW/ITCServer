@@ -1,7 +1,7 @@
 #Module cmake file
 #ModuleName:ITCServerFrame ModuleVersion:0.0.1
 set(MODULE_NAME ITCServerFrame)
-set(MODULE_LIB_NAME libitcserverframe.a)
+set(MODULE_LIB_NAME libitcserverframe)
 set(MODULE_VERSION 0.0.1)
 include_directories(${PROJECT_SOURCE_DIR}/include)
 aux_source_directory(. SRCS)

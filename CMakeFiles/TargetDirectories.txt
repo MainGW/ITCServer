@@ -67,10 +67,3 @@
 /Users/wanaoi/home/source.d/C++/ITCServer/tests/testapp/CMakeFiles/rebuild_cache.dir
 /Users/wanaoi/home/source.d/C++/ITCServer/tests/testapp/CMakeFiles/edit_cache.dir
 /Users/wanaoi/home/source.d/C++/ITCServer/tests/testapp/CMakeFiles/testapp.dir
-/Users/wanaoi/home/source.d/C++/ITCServer/tests/gmptest/CMakeFiles/install/local.dir
-/Users/wanaoi/home/source.d/C++/ITCServer/tests/gmptest/CMakeFiles/install/strip.dir
-/Users/wanaoi/home/source.d/C++/ITCServer/tests/gmptest/CMakeFiles/install.dir
-/Users/wanaoi/home/source.d/C++/ITCServer/tests/gmptest/CMakeFiles/list_install_components.dir
-/Users/wanaoi/home/source.d/C++/ITCServer/tests/gmptest/CMakeFiles/rebuild_cache.dir
-/Users/wanaoi/home/source.d/C++/ITCServer/tests/gmptest/CMakeFiles/edit_cache.dir
-/Users/wanaoi/home/source.d/C++/ITCServer/tests/gmptest/CMakeFiles/gmptest.dir

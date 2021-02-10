@@ -182,39 +182,18 @@ src/ITCServerFrame/clean: src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/
 
 # Recursive "all" directory target.
 tests/all: tests/testapp/all
-tests/all: tests/gmptest/all
 
 .PHONY : tests/all
 
 # Recursive "preinstall" directory target.
 tests/preinstall: tests/testapp/preinstall
-tests/preinstall: tests/gmptest/preinstall
 
 .PHONY : tests/preinstall
 
 # Recursive "clean" directory target.
 tests/clean: tests/testapp/clean
-tests/clean: tests/gmptest/clean
 
 .PHONY : tests/clean
-
-#=============================================================================
-# Directory level rules for directory tests/gmptest
-
-# Recursive "all" directory target.
-tests/gmptest/all: tests/gmptest/CMakeFiles/gmptest.dir/all
-
-.PHONY : tests/gmptest/all
-
-# Recursive "preinstall" directory target.
-tests/gmptest/preinstall:
-
-.PHONY : tests/gmptest/preinstall
-
-# Recursive "clean" directory target.
-tests/gmptest/clean: tests/gmptest/CMakeFiles/gmptest.dir/clean
-
-.PHONY : tests/gmptest/clean
 
 #=============================================================================
 # Directory level rules for directory tests/testapp
@@ -457,7 +436,7 @@ lib/CMakeFiles/ContinuousUpdate.dir/clean:
 lib/CMakeFiles/xmltest.dir/all: lib/CMakeFiles/tinyxml2.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/xmltest.dir/build.make lib/CMakeFiles/xmltest.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/xmltest.dir/build.make lib/CMakeFiles/xmltest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num=10,11 "Built target xmltest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num=8,9 "Built target xmltest"
 .PHONY : lib/CMakeFiles/xmltest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -754,7 +733,7 @@ lib/CMakeFiles/uninstall.dir/clean:
 lib/CMakeFiles/tinyxml2.dir/all:
 	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/tinyxml2.dir/build.make lib/CMakeFiles/tinyxml2.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/tinyxml2.dir/build.make lib/CMakeFiles/tinyxml2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num=8,9 "Built target tinyxml2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num=6,7 "Built target tinyxml2"
 .PHONY : lib/CMakeFiles/tinyxml2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1078,7 +1057,7 @@ lib/CMakeFiles/Experimental.dir/clean:
 src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/build.make src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/build.make src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num=3,4 "Built target libitcserverframe.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num=1,2 "Built target libitcserverframe.a"
 .PHONY : src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1105,7 +1084,7 @@ src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/clean:
 tests/testapp/CMakeFiles/testapp.dir/all: src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/testapp/CMakeFiles/testapp.dir/build.make tests/testapp/CMakeFiles/testapp.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/testapp/CMakeFiles/testapp.dir/build.make tests/testapp/CMakeFiles/testapp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num=5,6,7 "Built target testapp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num=3,4,5 "Built target testapp"
 .PHONY : tests/testapp/CMakeFiles/testapp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1124,33 +1103,6 @@ testapp: tests/testapp/CMakeFiles/testapp.dir/rule
 tests/testapp/CMakeFiles/testapp.dir/clean:
 	$(MAKE) $(MAKESILENT) -f tests/testapp/CMakeFiles/testapp.dir/build.make tests/testapp/CMakeFiles/testapp.dir/clean
 .PHONY : tests/testapp/CMakeFiles/testapp.dir/clean
-
-#=============================================================================
-# Target rules for target tests/gmptest/CMakeFiles/gmptest.dir
-
-# All Build rule for target.
-tests/gmptest/CMakeFiles/gmptest.dir/all:
-	$(MAKE) $(MAKESILENT) -f tests/gmptest/CMakeFiles/gmptest.dir/build.make tests/gmptest/CMakeFiles/gmptest.dir/depend
-	$(MAKE) $(MAKESILENT) -f tests/gmptest/CMakeFiles/gmptest.dir/build.make tests/gmptest/CMakeFiles/gmptest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles --progress-num=1,2 "Built target gmptest"
-.PHONY : tests/gmptest/CMakeFiles/gmptest.dir/all
-
-# Build rule for subdir invocation for target.
-tests/gmptest/CMakeFiles/gmptest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/gmptest/CMakeFiles/gmptest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/CMakeFiles 0
-.PHONY : tests/gmptest/CMakeFiles/gmptest.dir/rule
-
-# Convenience name for target.
-gmptest: tests/gmptest/CMakeFiles/gmptest.dir/rule
-
-.PHONY : gmptest
-
-# clean rule for target.
-tests/gmptest/CMakeFiles/gmptest.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tests/gmptest/CMakeFiles/gmptest.dir/build.make tests/gmptest/CMakeFiles/gmptest.dir/clean
-.PHONY : tests/gmptest/CMakeFiles/gmptest.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

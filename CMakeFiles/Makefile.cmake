@@ -14,7 +14,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "src/CMakeLists.txt"
   "src/ITCServerFrame/CMakeLists.txt"
   "tests/CMakeLists.txt"
-  "tests/gmptest/CMakeLists.txt"
   "tests/testapp/CMakeLists.txt"
   "tinyxml2/CMakeLists.txt"
   "tinyxml2/Config.cmake.in"
@@ -39,7 +38,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/local/share/cmake-3.19/Modules/Compiler/Clang.cmake"
   "/opt/local/share/cmake-3.19/Modules/Compiler/GNU.cmake"
   "/opt/local/share/cmake-3.19/Modules/DartConfiguration.tcl.in"
-  "/opt/local/share/cmake-3.19/Modules/FindGMP.cmake"
   "/opt/local/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake"
   "/opt/local/share/cmake-3.19/Modules/FindPackageMessage.cmake"
   "/opt/local/share/cmake-3.19/Modules/FindwxWidgets.cmake"
@@ -75,7 +73,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "src/ITCServerFrame/CMakeFiles/CMakeDirectoryInformation.cmake"
   "tests/CMakeFiles/CMakeDirectoryInformation.cmake"
   "tests/testapp/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "tests/gmptest/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -113,5 +110,4 @@ set(CMAKE_DEPEND_INFO_FILES
   "lib/CMakeFiles/Experimental.dir/DependInfo.cmake"
   "src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/DependInfo.cmake"
   "tests/testapp/CMakeFiles/testapp.dir/DependInfo.cmake"
-  "tests/gmptest/CMakeFiles/gmptest.dir/DependInfo.cmake"
   )

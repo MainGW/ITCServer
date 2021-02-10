@@ -42,8 +42,3 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/Users/wanaoi/home/source.d/C++/ITCServer/tests/testapp/cmake_install.cmake")
 endif()
 
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/wanaoi/home/source.d/C++/ITCServer/tests/gmptest/cmake_install.cmake")
-endif()
-

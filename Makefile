@@ -604,19 +604,6 @@ testapp/fast:
 	$(MAKE) $(MAKESILENT) -f tests/testapp/CMakeFiles/testapp.dir/build.make tests/testapp/CMakeFiles/testapp.dir/build
 .PHONY : testapp/fast
 
-#=============================================================================
-# Target rules for targets named gmptest
-
-# Build rule for target.
-gmptest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmptest
-.PHONY : gmptest
-
-# fast build rule for target.
-gmptest/fast:
-	$(MAKE) $(MAKESILENT) -f tests/gmptest/CMakeFiles/gmptest.dir/build.make tests/gmptest/CMakeFiles/gmptest.dir/build
-.PHONY : gmptest/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -658,7 +645,6 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... uninstall"
-	@echo "... gmptest"
 	@echo "... libitcserverframe.a"
 	@echo "... testapp"
 	@echo "... tinyxml2"
