@@ -1,4 +1,4 @@
-# Install script for directory: /Users/wanaoi/home/source.d/C++/ITCServer/src
+# Install script for directory: /Users/wanaoi/home/source.d/C++/ITCServer/src/ITCBigNumber
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,15 +35,5 @@ endif()
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/opt/local/bin/objdump")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/wanaoi/home/source.d/C++/ITCServer/build/src/ITCServerFrame/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/wanaoi/home/source.d/C++/ITCServer/build/src/ITCBigNumber/cmake_install.cmake")
 endif()
 

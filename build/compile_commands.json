@@ -11,8 +11,13 @@
 },
 {
   "directory": "/Users/wanaoi/home/source.d/C++/ITCServer/build/src/ITCServerFrame",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__ -I/Users/wanaoi/home/source.d/C++/ITCServer/include -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.1 -isystem /usr/local/include/wx-3.1 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/libitcserverframe.a.dir/ITCServerFrame.cpp.o -c /Users/wanaoi/home/source.d/C++/ITCServer/src/ITCServerFrame/ITCServerFrame.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXMAC__ -D__WXOSX_COCOA__ -D__WXOSX__ -I/Users/wanaoi/home/source.d/C++/ITCServer/include -isystem /usr/local/lib/wx/include/osx_cocoa-unicode-3.1 -isystem /usr/local/include/wx-3.1 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/libitcserverframe.dir/ITCServerFrame.cpp.o -c /Users/wanaoi/home/source.d/C++/ITCServer/src/ITCServerFrame/ITCServerFrame.cpp",
   "file": "/Users/wanaoi/home/source.d/C++/ITCServer/src/ITCServerFrame/ITCServerFrame.cpp"
+},
+{
+  "directory": "/Users/wanaoi/home/source.d/C++/ITCServer/build/src/ITCBigNumber",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/wanaoi/home/source.d/C++/ITCServer/include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/libitcbignumber.dir/ITCBigNumber.cpp.o -c /Users/wanaoi/home/source.d/C++/ITCServer/src/ITCBigNumber/ITCBigNumber.cpp",
+  "file": "/Users/wanaoi/home/source.d/C++/ITCServer/src/ITCBigNumber/ITCBigNumber.cpp"
 },
 {
   "directory": "/Users/wanaoi/home/source.d/C++/ITCServer/build/tests/testapp",

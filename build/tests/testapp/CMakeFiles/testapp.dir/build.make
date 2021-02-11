@@ -113,7 +113,6 @@ testapp_EXTERNAL_OBJECTS =
 output/testapp: tests/testapp/CMakeFiles/testapp.dir/src/TestApp.cpp.o
 output/testapp: tests/testapp/CMakeFiles/testapp.dir/src/main.cpp.o
 output/testapp: tests/testapp/CMakeFiles/testapp.dir/build.make
-output/testapp: lib/liblibitcserverframe.a.a
 output/testapp: tests/testapp/CMakeFiles/testapp.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../output/testapp"
 	cd /Users/wanaoi/home/source.d/C++/ITCServer/build/tests/testapp && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testapp.dir/link.txt --verbose=$(VERBOSE)

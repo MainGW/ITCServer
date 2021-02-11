@@ -10,7 +10,7 @@
 					[
 						1,
 						2,
-						4
+						5
 					],
 					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
@@ -60,16 +60,17 @@
 						25,
 						26,
 						27,
-						30,
 						31,
-						32
+						32,
+						33
 					]
 				},
 				{
 					"build" : "src",
 					"childIndexes" : 
 					[
-						3
+						3,
+						4
 					],
 					"minimumCMakeVersion" : 
 					{
@@ -90,6 +91,20 @@
 					"source" : "src/ITCServerFrame",
 					"targetIndexes" : 
 					[
+						29
+					]
+				},
+				{
+					"build" : "src/ITCBigNumber",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.19.4"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "src/ITCBigNumber",
+					"targetIndexes" : 
+					[
 						28
 					]
 				},
@@ -97,7 +112,7 @@
 					"build" : "tests",
 					"childIndexes" : 
 					[
-						5
+						6
 					],
 					"minimumCMakeVersion" : 
 					{
@@ -113,12 +128,12 @@
 					{
 						"string" : "3.19.4"
 					},
-					"parentIndex" : 4,
+					"parentIndex" : 5,
 					"projectIndex" : 0,
 					"source" : "tests/testapp",
 					"targetIndexes" : 
 					[
-						29
+						30
 					]
 				}
 			],
@@ -136,13 +151,15 @@
 						2,
 						3,
 						4,
-						5
+						5,
+						6
 					],
 					"name" : "ITCServer",
 					"targetIndexes" : 
 					[
 						28,
-						29
+						29,
+						30
 					]
 				},
 				{
@@ -182,9 +199,9 @@
 						25,
 						26,
 						27,
-						30,
 						31,
-						32
+						32,
+						33
 					]
 				}
 			],
@@ -387,16 +404,23 @@
 					"projectIndex" : 1
 				},
 				{
-					"directoryIndex" : 3,
-					"id" : "libitcserverframe.a::@38c6dba30a4412571ad2",
-					"jsonFile" : "target-libitcserverframe.a-Debug-f6419bde9eb00aef52e2.json",
-					"name" : "libitcserverframe.a",
+					"directoryIndex" : 4,
+					"id" : "libitcbignumber::@9bc01637a95ba8d179cd",
+					"jsonFile" : "target-libitcbignumber-Debug-2993eef12acd7752c28d.json",
+					"name" : "libitcbignumber",
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 5,
+					"directoryIndex" : 3,
+					"id" : "libitcserverframe::@38c6dba30a4412571ad2",
+					"jsonFile" : "target-libitcserverframe-Debug-de0b96a7433f20eb9776.json",
+					"name" : "libitcserverframe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
 					"id" : "testapp::@ab6593581742e77529ba",
-					"jsonFile" : "target-testapp-Debug-f2282ece4e433e7c98cd.json",
+					"jsonFile" : "target-testapp-Debug-e448fc4c9348d45f0665.json",
 					"name" : "testapp",
 					"projectIndex" : 0
 				},

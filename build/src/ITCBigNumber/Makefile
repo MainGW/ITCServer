@@ -145,14 +145,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/wanaoi/home/source.d/C++/ITCServer/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/build/CMakeFiles /Users/wanaoi/home/source.d/C++/ITCServer/build/src/ITCServerFrame//CMakeFiles/progress.marks
-	cd /Users/wanaoi/home/source.d/C++/ITCServer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/ITCServerFrame/all
+	cd /Users/wanaoi/home/source.d/C++/ITCServer/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/build/CMakeFiles /Users/wanaoi/home/source.d/C++/ITCServer/build/src/ITCBigNumber//CMakeFiles/progress.marks
+	cd /Users/wanaoi/home/source.d/C++/ITCServer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/ITCBigNumber/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/wanaoi/home/source.d/C++/ITCServer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/ITCServerFrame/clean
+	cd /Users/wanaoi/home/source.d/C++/ITCServer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/ITCBigNumber/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,12 +162,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/wanaoi/home/source.d/C++/ITCServer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/ITCServerFrame/preinstall
+	cd /Users/wanaoi/home/source.d/C++/ITCServer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/ITCBigNumber/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/wanaoi/home/source.d/C++/ITCServer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/ITCServerFrame/preinstall
+	cd /Users/wanaoi/home/source.d/C++/ITCServer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/ITCBigNumber/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -176,46 +176,46 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/ITCServerFrame/CMakeFiles/libitcserverframe.dir/rule:
-	cd /Users/wanaoi/home/source.d/C++/ITCServer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/ITCServerFrame/CMakeFiles/libitcserverframe.dir/rule
-.PHONY : src/ITCServerFrame/CMakeFiles/libitcserverframe.dir/rule
+src/ITCBigNumber/CMakeFiles/libitcbignumber.dir/rule:
+	cd /Users/wanaoi/home/source.d/C++/ITCServer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/ITCBigNumber/CMakeFiles/libitcbignumber.dir/rule
+.PHONY : src/ITCBigNumber/CMakeFiles/libitcbignumber.dir/rule
 
 # Convenience name for target.
-libitcserverframe: src/ITCServerFrame/CMakeFiles/libitcserverframe.dir/rule
+libitcbignumber: src/ITCBigNumber/CMakeFiles/libitcbignumber.dir/rule
 
-.PHONY : libitcserverframe
+.PHONY : libitcbignumber
 
 # fast build rule for target.
-libitcserverframe/fast:
-	cd /Users/wanaoi/home/source.d/C++/ITCServer/build && $(MAKE) $(MAKESILENT) -f src/ITCServerFrame/CMakeFiles/libitcserverframe.dir/build.make src/ITCServerFrame/CMakeFiles/libitcserverframe.dir/build
-.PHONY : libitcserverframe/fast
+libitcbignumber/fast:
+	cd /Users/wanaoi/home/source.d/C++/ITCServer/build && $(MAKE) $(MAKESILENT) -f src/ITCBigNumber/CMakeFiles/libitcbignumber.dir/build.make src/ITCBigNumber/CMakeFiles/libitcbignumber.dir/build
+.PHONY : libitcbignumber/fast
 
-ITCServerFrame.o: ITCServerFrame.cpp.o
+ITCBigNumber.o: ITCBigNumber.cpp.o
 
-.PHONY : ITCServerFrame.o
+.PHONY : ITCBigNumber.o
 
 # target to build an object file
-ITCServerFrame.cpp.o:
-	cd /Users/wanaoi/home/source.d/C++/ITCServer/build && $(MAKE) $(MAKESILENT) -f src/ITCServerFrame/CMakeFiles/libitcserverframe.dir/build.make src/ITCServerFrame/CMakeFiles/libitcserverframe.dir/ITCServerFrame.cpp.o
-.PHONY : ITCServerFrame.cpp.o
+ITCBigNumber.cpp.o:
+	cd /Users/wanaoi/home/source.d/C++/ITCServer/build && $(MAKE) $(MAKESILENT) -f src/ITCBigNumber/CMakeFiles/libitcbignumber.dir/build.make src/ITCBigNumber/CMakeFiles/libitcbignumber.dir/ITCBigNumber.cpp.o
+.PHONY : ITCBigNumber.cpp.o
 
-ITCServerFrame.i: ITCServerFrame.cpp.i
+ITCBigNumber.i: ITCBigNumber.cpp.i
 
-.PHONY : ITCServerFrame.i
+.PHONY : ITCBigNumber.i
 
 # target to preprocess a source file
-ITCServerFrame.cpp.i:
-	cd /Users/wanaoi/home/source.d/C++/ITCServer/build && $(MAKE) $(MAKESILENT) -f src/ITCServerFrame/CMakeFiles/libitcserverframe.dir/build.make src/ITCServerFrame/CMakeFiles/libitcserverframe.dir/ITCServerFrame.cpp.i
-.PHONY : ITCServerFrame.cpp.i
+ITCBigNumber.cpp.i:
+	cd /Users/wanaoi/home/source.d/C++/ITCServer/build && $(MAKE) $(MAKESILENT) -f src/ITCBigNumber/CMakeFiles/libitcbignumber.dir/build.make src/ITCBigNumber/CMakeFiles/libitcbignumber.dir/ITCBigNumber.cpp.i
+.PHONY : ITCBigNumber.cpp.i
 
-ITCServerFrame.s: ITCServerFrame.cpp.s
+ITCBigNumber.s: ITCBigNumber.cpp.s
 
-.PHONY : ITCServerFrame.s
+.PHONY : ITCBigNumber.s
 
 # target to generate assembly for a file
-ITCServerFrame.cpp.s:
-	cd /Users/wanaoi/home/source.d/C++/ITCServer/build && $(MAKE) $(MAKESILENT) -f src/ITCServerFrame/CMakeFiles/libitcserverframe.dir/build.make src/ITCServerFrame/CMakeFiles/libitcserverframe.dir/ITCServerFrame.cpp.s
-.PHONY : ITCServerFrame.cpp.s
+ITCBigNumber.cpp.s:
+	cd /Users/wanaoi/home/source.d/C++/ITCServer/build && $(MAKE) $(MAKESILENT) -f src/ITCBigNumber/CMakeFiles/libitcbignumber.dir/build.make src/ITCBigNumber/CMakeFiles/libitcbignumber.dir/ITCBigNumber.cpp.s
+.PHONY : ITCBigNumber.cpp.s
 
 # Help Target
 help:
@@ -229,10 +229,10 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... libitcserverframe"
-	@echo "... ITCServerFrame.o"
-	@echo "... ITCServerFrame.i"
-	@echo "... ITCServerFrame.s"
+	@echo "... libitcbignumber"
+	@echo "... ITCBigNumber.o"
+	@echo "... ITCBigNumber.i"
+	@echo "... ITCBigNumber.s"
 .PHONY : help
 
 

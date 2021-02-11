@@ -1,0 +1,6 @@
+set(module_NAME ITCBigNumber)
+set(module_LIB libitcbignumber)
+aux_source_directory(. module_SRCS)
+include_directories(${PROJECT_SOURCE_DIR}/include)
+add_library(${module_LIB} STATIC ${module_SRCS})
+set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)

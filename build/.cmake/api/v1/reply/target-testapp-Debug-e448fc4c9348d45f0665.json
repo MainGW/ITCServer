@@ -135,13 +135,6 @@
 			]
 		}
 	],
-	"dependencies" : 
-	[
-		{
-			"backtrace" : 2,
-			"id" : "libitcserverframe.a::@38c6dba30a4412571ad2"
-		}
-	],
 	"id" : "testapp::@ab6593581742e77529ba",
 	"link" : 
 	{
@@ -157,7 +150,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "../../lib/liblibitcserverframe.a.a",
+				"fragment" : "-litcserverframe",
 				"role" : "libraries"
 			},
 			{

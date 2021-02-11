@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "lib/liblibitcserverframe.a.a"
+			"path" : "lib/liblibitcserverframe.a"
 		}
 	],
 	"backtrace" : 1,
@@ -118,9 +118,9 @@
 			]
 		}
 	],
-	"id" : "libitcserverframe.a::@38c6dba30a4412571ad2",
-	"name" : "libitcserverframe.a",
-	"nameOnDisk" : "liblibitcserverframe.a.a",
+	"id" : "libitcserverframe::@38c6dba30a4412571ad2",
+	"name" : "libitcserverframe",
+	"nameOnDisk" : "liblibitcserverframe.a",
 	"paths" : 
 	{
 		"build" : "src/ITCServerFrame",

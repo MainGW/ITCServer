@@ -4,8 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/wanaoi/home/source.d/C++/ITCServer/tests/testapp/src/TestApp.cpp" "/Users/wanaoi/home/source.d/C++/ITCServer/build/tests/testapp/CMakeFiles/testapp.dir/src/TestApp.cpp.o"
-  "/Users/wanaoi/home/source.d/C++/ITCServer/tests/testapp/src/main.cpp" "/Users/wanaoi/home/source.d/C++/ITCServer/build/tests/testapp/CMakeFiles/testapp.dir/src/main.cpp.o"
+  "/Users/wanaoi/home/source.d/C++/ITCServer/src/ITCServerFrame/ITCServerFrame.cpp" "/Users/wanaoi/home/source.d/C++/ITCServer/build/src/ITCServerFrame/CMakeFiles/libitcserverframe.dir/ITCServerFrame.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
@@ -20,7 +19,6 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../tests/testapp/include"
   "../include"
   "/usr/local/lib/wx/include/osx_cocoa-unicode-3.1"
   "/usr/local/include/wx-3.1"

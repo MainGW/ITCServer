@@ -579,17 +579,30 @@ Experimental/fast:
 .PHONY : Experimental/fast
 
 #=============================================================================
-# Target rules for targets named libitcserverframe.a
+# Target rules for targets named libitcserverframe
 
 # Build rule for target.
-libitcserverframe.a: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libitcserverframe.a
-.PHONY : libitcserverframe.a
+libitcserverframe: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libitcserverframe
+.PHONY : libitcserverframe
 
 # fast build rule for target.
-libitcserverframe.a/fast:
-	$(MAKE) $(MAKESILENT) -f src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/build.make src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/build
-.PHONY : libitcserverframe.a/fast
+libitcserverframe/fast:
+	$(MAKE) $(MAKESILENT) -f src/ITCServerFrame/CMakeFiles/libitcserverframe.dir/build.make src/ITCServerFrame/CMakeFiles/libitcserverframe.dir/build
+.PHONY : libitcserverframe/fast
+
+#=============================================================================
+# Target rules for targets named libitcbignumber
+
+# Build rule for target.
+libitcbignumber: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libitcbignumber
+.PHONY : libitcbignumber
+
+# fast build rule for target.
+libitcbignumber/fast:
+	$(MAKE) $(MAKESILENT) -f src/ITCBigNumber/CMakeFiles/libitcbignumber.dir/build.make src/ITCBigNumber/CMakeFiles/libitcbignumber.dir/build
+.PHONY : libitcbignumber/fast
 
 #=============================================================================
 # Target rules for targets named testapp
@@ -645,7 +658,8 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... uninstall"
-	@echo "... libitcserverframe.a"
+	@echo "... libitcbignumber"
+	@echo "... libitcserverframe"
 	@echo "... testapp"
 	@echo "... tinyxml2"
 	@echo "... xmltest"

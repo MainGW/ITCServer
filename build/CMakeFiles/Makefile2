@@ -146,24 +146,45 @@ lib/clean: lib/CMakeFiles/Experimental.dir/clean
 
 # Recursive "all" directory target.
 src/all: src/ITCServerFrame/all
+src/all: src/ITCBigNumber/all
 
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
 src/preinstall: src/ITCServerFrame/preinstall
+src/preinstall: src/ITCBigNumber/preinstall
 
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
 src/clean: src/ITCServerFrame/clean
+src/clean: src/ITCBigNumber/clean
 
 .PHONY : src/clean
+
+#=============================================================================
+# Directory level rules for directory src/ITCBigNumber
+
+# Recursive "all" directory target.
+src/ITCBigNumber/all: src/ITCBigNumber/CMakeFiles/libitcbignumber.dir/all
+
+.PHONY : src/ITCBigNumber/all
+
+# Recursive "preinstall" directory target.
+src/ITCBigNumber/preinstall:
+
+.PHONY : src/ITCBigNumber/preinstall
+
+# Recursive "clean" directory target.
+src/ITCBigNumber/clean: src/ITCBigNumber/CMakeFiles/libitcbignumber.dir/clean
+
+.PHONY : src/ITCBigNumber/clean
 
 #=============================================================================
 # Directory level rules for directory src/ITCServerFrame
 
 # Recursive "all" directory target.
-src/ITCServerFrame/all: src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/all
+src/ITCServerFrame/all: src/ITCServerFrame/CMakeFiles/libitcserverframe.dir/all
 
 .PHONY : src/ITCServerFrame/all
 
@@ -173,7 +194,7 @@ src/ITCServerFrame/preinstall:
 .PHONY : src/ITCServerFrame/preinstall
 
 # Recursive "clean" directory target.
-src/ITCServerFrame/clean: src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/clean
+src/ITCServerFrame/clean: src/ITCServerFrame/CMakeFiles/libitcserverframe.dir/clean
 
 .PHONY : src/ITCServerFrame/clean
 
@@ -436,7 +457,7 @@ lib/CMakeFiles/ContinuousUpdate.dir/clean:
 lib/CMakeFiles/xmltest.dir/all: lib/CMakeFiles/tinyxml2.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/xmltest.dir/build.make lib/CMakeFiles/xmltest.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/xmltest.dir/build.make lib/CMakeFiles/xmltest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/build/CMakeFiles --progress-num=8,9 "Built target xmltest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/build/CMakeFiles --progress-num=10,11 "Built target xmltest"
 .PHONY : lib/CMakeFiles/xmltest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -733,7 +754,7 @@ lib/CMakeFiles/uninstall.dir/clean:
 lib/CMakeFiles/tinyxml2.dir/all:
 	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/tinyxml2.dir/build.make lib/CMakeFiles/tinyxml2.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/tinyxml2.dir/build.make lib/CMakeFiles/tinyxml2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/build/CMakeFiles --progress-num=6,7 "Built target tinyxml2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/build/CMakeFiles --progress-num=8,9 "Built target tinyxml2"
 .PHONY : lib/CMakeFiles/tinyxml2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1051,45 +1072,72 @@ lib/CMakeFiles/Experimental.dir/clean:
 .PHONY : lib/CMakeFiles/Experimental.dir/clean
 
 #=============================================================================
-# Target rules for target src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir
+# Target rules for target src/ITCServerFrame/CMakeFiles/libitcserverframe.dir
 
 # All Build rule for target.
-src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/all:
-	$(MAKE) $(MAKESILENT) -f src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/build.make src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/build.make src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/build/CMakeFiles --progress-num=1,2 "Built target libitcserverframe.a"
-.PHONY : src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/all
+src/ITCServerFrame/CMakeFiles/libitcserverframe.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/ITCServerFrame/CMakeFiles/libitcserverframe.dir/build.make src/ITCServerFrame/CMakeFiles/libitcserverframe.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/ITCServerFrame/CMakeFiles/libitcserverframe.dir/build.make src/ITCServerFrame/CMakeFiles/libitcserverframe.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/build/CMakeFiles --progress-num=3,4 "Built target libitcserverframe"
+.PHONY : src/ITCServerFrame/CMakeFiles/libitcserverframe.dir/all
 
 # Build rule for subdir invocation for target.
-src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/rule: cmake_check_build_system
+src/ITCServerFrame/CMakeFiles/libitcserverframe.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/ITCServerFrame/CMakeFiles/libitcserverframe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/build/CMakeFiles 0
-.PHONY : src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/rule
+.PHONY : src/ITCServerFrame/CMakeFiles/libitcserverframe.dir/rule
 
 # Convenience name for target.
-libitcserverframe.a: src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/rule
+libitcserverframe: src/ITCServerFrame/CMakeFiles/libitcserverframe.dir/rule
 
-.PHONY : libitcserverframe.a
+.PHONY : libitcserverframe
 
 # clean rule for target.
-src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/build.make src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/clean
-.PHONY : src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/clean
+src/ITCServerFrame/CMakeFiles/libitcserverframe.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/ITCServerFrame/CMakeFiles/libitcserverframe.dir/build.make src/ITCServerFrame/CMakeFiles/libitcserverframe.dir/clean
+.PHONY : src/ITCServerFrame/CMakeFiles/libitcserverframe.dir/clean
+
+#=============================================================================
+# Target rules for target src/ITCBigNumber/CMakeFiles/libitcbignumber.dir
+
+# All Build rule for target.
+src/ITCBigNumber/CMakeFiles/libitcbignumber.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/ITCBigNumber/CMakeFiles/libitcbignumber.dir/build.make src/ITCBigNumber/CMakeFiles/libitcbignumber.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/ITCBigNumber/CMakeFiles/libitcbignumber.dir/build.make src/ITCBigNumber/CMakeFiles/libitcbignumber.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/build/CMakeFiles --progress-num=1,2 "Built target libitcbignumber"
+.PHONY : src/ITCBigNumber/CMakeFiles/libitcbignumber.dir/all
+
+# Build rule for subdir invocation for target.
+src/ITCBigNumber/CMakeFiles/libitcbignumber.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/ITCBigNumber/CMakeFiles/libitcbignumber.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/build/CMakeFiles 0
+.PHONY : src/ITCBigNumber/CMakeFiles/libitcbignumber.dir/rule
+
+# Convenience name for target.
+libitcbignumber: src/ITCBigNumber/CMakeFiles/libitcbignumber.dir/rule
+
+.PHONY : libitcbignumber
+
+# clean rule for target.
+src/ITCBigNumber/CMakeFiles/libitcbignumber.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/ITCBigNumber/CMakeFiles/libitcbignumber.dir/build.make src/ITCBigNumber/CMakeFiles/libitcbignumber.dir/clean
+.PHONY : src/ITCBigNumber/CMakeFiles/libitcbignumber.dir/clean
 
 #=============================================================================
 # Target rules for target tests/testapp/CMakeFiles/testapp.dir
 
 # All Build rule for target.
-tests/testapp/CMakeFiles/testapp.dir/all: src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/all
+tests/testapp/CMakeFiles/testapp.dir/all:
 	$(MAKE) $(MAKESILENT) -f tests/testapp/CMakeFiles/testapp.dir/build.make tests/testapp/CMakeFiles/testapp.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/testapp/CMakeFiles/testapp.dir/build.make tests/testapp/CMakeFiles/testapp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/build/CMakeFiles --progress-num=3,4,5 "Built target testapp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wanaoi/home/source.d/C++/ITCServer/build/CMakeFiles --progress-num=5,6,7 "Built target testapp"
 .PHONY : tests/testapp/CMakeFiles/testapp.dir/all
 
 # Build rule for subdir invocation for target.
 tests/testapp/CMakeFiles/testapp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/testapp/CMakeFiles/testapp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wanaoi/home/source.d/C++/ITCServer/build/CMakeFiles 0
 .PHONY : tests/testapp/CMakeFiles/testapp.dir/rule

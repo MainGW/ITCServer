@@ -12,6 +12,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.19.4/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.19.4/CMakeSystem.cmake"
   "../src/CMakeLists.txt"
+  "../src/ITCBigNumber/CMakeLists.txt"
   "../src/ITCServerFrame/CMakeLists.txt"
   "../tests/CMakeLists.txt"
   "../tests/testapp/CMakeLists.txt"
@@ -71,6 +72,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "lib/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/ITCServerFrame/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/ITCBigNumber/CMakeFiles/CMakeDirectoryInformation.cmake"
   "tests/CMakeFiles/CMakeDirectoryInformation.cmake"
   "tests/testapp/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
@@ -108,6 +110,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "lib/CMakeFiles/ExperimentalMemCheck.dir/DependInfo.cmake"
   "lib/CMakeFiles/Continuous.dir/DependInfo.cmake"
   "lib/CMakeFiles/Experimental.dir/DependInfo.cmake"
-  "src/ITCServerFrame/CMakeFiles/libitcserverframe.a.dir/DependInfo.cmake"
+  "src/ITCServerFrame/CMakeFiles/libitcserverframe.dir/DependInfo.cmake"
+  "src/ITCBigNumber/CMakeFiles/libitcbignumber.dir/DependInfo.cmake"
   "tests/testapp/CMakeFiles/testapp.dir/DependInfo.cmake"
   )
