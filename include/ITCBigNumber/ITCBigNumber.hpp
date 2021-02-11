@@ -7,9 +7,9 @@ class ITCBigNumber
         ITCBigNumber(unsigned long long a=0);
         ~ITCBigNumber();
         ITCBigNumber(const ITCBigNumber &obj);
-        int getNumlen();
-        int *getBase();
-        unsigned long long exportNumber();
+        int getNumlen() const;
+        int *getBase() const;
+        unsigned long long exportNumber() const;
         void operator=(unsigned long long a);
         void operator=(const ITCBigNumber &obj);
         ITCBigNumber operator+(const ITCBigNumber &obj)const;

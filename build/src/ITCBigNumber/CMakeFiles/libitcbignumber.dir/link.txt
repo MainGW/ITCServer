@@ -1,2 +1,0 @@
-/opt/local/bin/ar qc ../../lib/liblibitcbignumber.a CMakeFiles/libitcbignumber.dir/ITCBigNumber.cpp.o
-/opt/local/bin/ranlib ../../lib/liblibitcbignumber.a

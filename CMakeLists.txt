@@ -5,6 +5,7 @@
 #############################
 cmake_minimum_required(VERSION 3.19.4 FATAL_ERROR)
 project(ITCServer)
+set(CMAKE_CXX_STANDARD 11)
 add_subdirectory(tinyxml2 lib)
 add_subdirectory(src)
 add_subdirectory(tests)
